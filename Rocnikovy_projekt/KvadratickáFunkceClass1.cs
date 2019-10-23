@@ -14,9 +14,8 @@ namespace Rocnikovy_projekt
         private double b;
         private double c;
         private Chart graf;
-        private bool maximum = false;
-        private double RozA;
-        private double RozB;
+        public double RozA;
+        public double RozB;
 
         private double D, x1, x2;
 
@@ -31,7 +30,11 @@ namespace Rocnikovy_projekt
             this.RozB = RozB;
         }
         //****************************************************************
-      
+        public KvadratickáFunkce()
+        {
+
+        }
+        //*****************************************************************
 
         
         public void Vykresli()

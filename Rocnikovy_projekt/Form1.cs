@@ -25,15 +25,15 @@ namespace Rocnikovy_projekt
             InitializeComponent();
         }
 
-        
-    
 
+        KvadratickáFunkce KvaFun;
+        bool buttonclick = false;
 
         private void KvaButton1_Click(object sender, EventArgs e)
         { //ahojda
             bool ReseniVR;
             double x1, x2 = 0;
-            KvadratickáFunkce KvaFun = new KvadratickáFunkce(double.Parse(KvaTextBox1.Text), double.Parse(KvaTextBox2.Text), double.Parse(KvaTextBox3.Text),
+            KvaFun = new KvadratickáFunkce(double.Parse(KvaTextBox1.Text), double.Parse(KvaTextBox2.Text), double.Parse(KvaTextBox3.Text),
                 chart1,double.Parse(KvaTextBox4.Text),double.Parse(KvaTextBox5.Text));
             KvaFun.Vykresli();
             x1 = KvaFun.Koreny(out x2, out ReseniVR);
@@ -50,8 +50,8 @@ namespace Rocnikovy_projekt
             label3.Text = "Vrchol v bodě: " +  KvaFun.VrcholXY();
             label4.Text = "Definiční obor: " + KvaFun.Definicni_obor();
             label5.Text = KvaFun.MaxMin();
-            
-            
+
+            buttonclick = true;
             
         }
 
@@ -62,6 +62,29 @@ namespace Rocnikovy_projekt
             label3.Text = "";
             label4.Text = "";
             label5.Text = "";
+        }
+
+        private void KvaTextBox4_TextChanged(object sender, EventArgs e)
+        {
+            
+            bool spravne = double.TryParse(KvaTextBox4.Text, out double cislo);
+
+            if (spravne&&buttonclick)
+            {
+                KvaFun.RozA = cislo;
+                KvaFun.Vykresli();
+            }
+        }
+
+        private void KvaTextBox5_TextChanged(object sender, EventArgs e)
+        {
+            bool spravne = double.TryParse(KvaTextBox5.Text, out double cislo);
+
+            if(spravne&&buttonclick)
+            {
+                KvaFun.RozB = cislo;
+                KvaFun.Vykresli();
+            }
         }
     }
 

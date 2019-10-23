@@ -18,3 +18,23 @@ C:\Users\Dominik\Documents\Ročníkový projekt\Rocnikovy_projekt\Rocnikovy_proj
 C:\Users\Dominik\Documents\Ročníkový projekt\Rocnikovy_projekt\Rocnikovy_projekt\bin\Debug\LiveCharts.WinForms.dll
 C:\Users\Dominik\Documents\Ročníkový projekt\Rocnikovy_projekt\Rocnikovy_projekt\bin\Debug\LiveCharts.WinForms.pdb
 C:\Users\Dominik\Documents\Ročníkový projekt\Rocnikovy_projekt\Rocnikovy_projekt\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\bin\Debug\Rocnikovy_projekt.exe.config
+C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\bin\Debug\Rocnikovy_projekt.exe
+C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\bin\Debug\Rocnikovy_projekt.pdb
+C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\bin\Debug\LiveCharts.dll
+C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\bin\Debug\LiveCharts.pdb
+C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\bin\Debug\LiveCharts.xml
+C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\obj\Debug\Rocnikovy_projekt.csprojAssemblyReference.cache
+C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\obj\Debug\Rocnikovy_projekt.Form1.resources
+C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\obj\Debug\Rocnikovy_projekt.Properties.Resources.resources
+C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\obj\Debug\Rocnikovy_projekt.csproj.GenerateResource.cache
+C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\obj\Debug\Rocnikovy_projekt.csproj.CoreCompileInputs.cache
+C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\obj\Debug\Rocnikovy_projekt.csproj.CopyComplete
+C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\obj\Debug\Rocnikovy_projekt.exe
+C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\obj\Debug\Rocnikovy_projekt.pdb
