@@ -30,7 +30,7 @@ namespace Rocnikovy_projekt
 
 
         private void KvaButton1_Click(object sender, EventArgs e)
-        {
+        { //ahojda
             bool ReseniVR;
             double x1, x2 = 0;
             KvadratickáFunkce KvaFun = new KvadratickáFunkce(double.Parse(KvaTextBox1.Text), double.Parse(KvaTextBox2.Text), double.Parse(KvaTextBox3.Text),
