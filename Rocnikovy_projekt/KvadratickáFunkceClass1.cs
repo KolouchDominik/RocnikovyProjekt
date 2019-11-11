@@ -44,10 +44,6 @@ namespace Rocnikovy_projekt
 
             if (a > 0)
             {
-                double VrcholX = 0 - (b / 2);//
-                double VrcholY = a * VrcholX * VrcholX + b * VrcholX + c;
-
-
 
                 for (double x = RozA; x <= RozB; ++x)
                 {
@@ -57,8 +53,6 @@ namespace Rocnikovy_projekt
             }
             else
             {
-                double VrcholX = (b / 2); //
-                double VrcholY = a * VrcholX * VrcholX + b * VrcholX + c;
 
 
                 for (double x = RozA; x <= RozB; ++x)
@@ -97,15 +91,19 @@ namespace Rocnikovy_projekt
             double VrcholY = 0;
             if (a > 0)
             {
-                VrcholX = 0 - (b / 2);//
-                VrcholY = a * VrcholX * VrcholX + b * VrcholX + c;
+                //VrcholX = 0 - (b / 2);//
+                //VrcholY = a * VrcholX * VrcholX + b * VrcholX + c;
+                VrcholX = -b /(2*a);
+                VrcholY = -((b * b) / (4 * a)) + c;
                 return "[" + VrcholX + ";" + VrcholY + "]";
             }
 
             else
             {
-                VrcholX = (b / 2); //
-                VrcholY = a * VrcholX * VrcholX + b * VrcholX + c;
+                //VrcholX = (b / 2); //
+                //VrcholY = a * VrcholX * VrcholX + b * VrcholX + c;
+                VrcholX = -b / (2 * a);
+                VrcholY = -((b * b) / (4 * a)) + c;
                 return "[" + VrcholX + ";" + VrcholY + "]";
             }
         }

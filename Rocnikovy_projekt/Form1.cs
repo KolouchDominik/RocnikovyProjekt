@@ -33,25 +33,31 @@ namespace Rocnikovy_projekt
         { //ahojda
             bool ReseniVR;
             double x1, x2 = 0;
-            KvaFun = new KvadratickáFunkce(double.Parse(KvaTextBox1.Text), double.Parse(KvaTextBox2.Text), double.Parse(KvaTextBox3.Text),
-                chart1,double.Parse(KvaTextBox4.Text),double.Parse(KvaTextBox5.Text));
-            KvaFun.Vykresli();
-            x1 = KvaFun.Koreny(out x2, out ReseniVR);
-            if (ReseniVR)
+            if (double.TryParse(KvaTextBox1.Text, out double cislo1) && double.TryParse(KvaTextBox2.Text, out double cislo2) && double.TryParse(KvaTextBox3.Text, out double cislo3)
+                && double.TryParse(KvaTextBox4.Text, out double cislo4) && double.TryParse(KvaTextBox5.Text, out double cislo5))
             {
-                if (x1 != x2)
-                {
-                    label1.Text = "Kořen x1 = " + x1;
-                    label2.Text = "Kořen x2 = " + x2;
-                }
-                else label1.Text = "Kořen x1 a x2 = " + x1;
-            }
-            else label1.Text = "Nemá řešení v oboru reálných čísel";
-            label3.Text = "Vrchol v bodě: " +  KvaFun.VrcholXY();
-            label4.Text = "Definiční obor: " + KvaFun.Definicni_obor();
-            label5.Text = KvaFun.MaxMin();
+                KvaFun = new KvadratickáFunkce(cislo1, cislo2, cislo3, chart1, cislo4, cislo5);
 
-            buttonclick = true;
+                KvaFun.Vykresli();
+                x1 = KvaFun.Koreny(out x2, out ReseniVR);
+                if (ReseniVR)
+                {
+                    if (x1 != x2)
+                    {
+                        label1.Text = "Kořen x1 = " + x1;
+                        label2.Text = "Kořen x2 = " + x2;
+                    }
+                    else label1.Text = "Kořen x1 a x2 = " + x1;
+                }
+                else label1.Text = "Nemá řešení v oboru reálných čísel";
+                label3.Text = "Vrchol v bodě: " + KvaFun.VrcholXY();
+                label4.Text = "Definiční obor: " + KvaFun.Definicni_obor();
+                label5.Text = KvaFun.MaxMin();
+
+                buttonclick = true;
+            }
+
+            else MessageBox.Show("špantě zadané parametry, musí být obsaženy pouze čísla!");
             
         }
 
