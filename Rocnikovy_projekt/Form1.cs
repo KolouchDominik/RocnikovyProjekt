@@ -25,21 +25,23 @@ namespace Rocnikovy_projekt
             InitializeComponent();
         }
 
-
         KvadratickáFunkce KvaFun;
         bool buttonclick = false;
 
+        // Kvadratická funkce ***********************************************************************************************************************************
         private void KvaButton1_Click(object sender, EventArgs e)
-        { //ahojda
-            bool ReseniVR;
+        { 
             double x1, x2 = 0;
-            if (double.TryParse(KvaTextBox1.Text, out double cislo1) && double.TryParse(KvaTextBox2.Text, out double cislo2) && double.TryParse(KvaTextBox3.Text, out double cislo3)
-                && double.TryParse(KvaTextBox4.Text, out double cislo4) && double.TryParse(KvaTextBox5.Text, out double cislo5))
+            if (double.TryParse(KvaTextBox1.Text, out double cislo1)
+                && double.TryParse(KvaTextBox2.Text, out double cislo2)
+                && double.TryParse(KvaTextBox3.Text, out double cislo3)
+                && double.TryParse(KvaTextBox4.Text, out double cislo4)
+                && double.TryParse(KvaTextBox5.Text, out double cislo5))
             {
                 KvaFun = new KvadratickáFunkce(cislo1, cislo2, cislo3, chart1, cislo4, cislo5);
 
                 KvaFun.Vykresli();
-                x1 = KvaFun.Koreny(out x2, out ReseniVR);
+                x1 = KvaFun.Koreny(out x2, out bool ReseniVR);
                 if (ReseniVR)
                 {
                     if (x1 != x2)
@@ -92,6 +94,7 @@ namespace Rocnikovy_projekt
                 KvaFun.Vykresli();
             }
         }
+        // Kvadratická funkce konec ***********************************************************************************************************************************
     }
 
 }

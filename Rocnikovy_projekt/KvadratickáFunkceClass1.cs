@@ -18,8 +18,9 @@ namespace Rocnikovy_projekt
         public double RozB;
 
         private double D, x1, x2;
-
-
+        private ChartArea CA;
+        
+        
         public KvadratickáFunkce(double a, double b, double c, Chart graf,double RozA, double RozB)
         {
             this.a = a;
@@ -40,6 +41,7 @@ namespace Rocnikovy_projekt
         public void Vykresli()
         {
 
+            double PrvniY=RozA, PosledniY = 0;
             graf.Series["Kvadraticka funkce"].Points.Clear();
 
             if (a > 0)
@@ -49,6 +51,10 @@ namespace Rocnikovy_projekt
                 {
                     double y = a * (x * x) + b * x + c;
                     graf.Series["Kvadraticka funkce"].Points.AddXY(x, y);
+                    if(x==RozB)
+                    {
+                        PosledniY = x;
+                    }
                 }
             }
             else
@@ -59,8 +65,18 @@ namespace Rocnikovy_projekt
                 {
                     double y = a * (x * x) + b * x + c;
                     graf.Series["Kvadraticka funkce"].Points.AddXY(x, y);
+                    if (x == RozB)
+                    {
+                        PosledniY = x;
+                    }
                 }
             }
+
+            CA = graf.ChartAreas[0];
+            CA.CursorY.IsUserSelectionEnabled = true;
+            CA.AxisY.ScaleView.Zoom(PrvniY,PosledniY);
+            CA.AxisY.ScaleView.SizeType = DateTimeIntervalType.Number;
+            CA.AxisY.ScaleView.Zoomable = true;
         }
         //************************************************************************
         public double Koreny(out double x2, out bool ResVR)
@@ -91,8 +107,6 @@ namespace Rocnikovy_projekt
             double VrcholY = 0;
             if (a > 0)
             {
-                //VrcholX = 0 - (b / 2);//
-                //VrcholY = a * VrcholX * VrcholX + b * VrcholX + c;
                 VrcholX = -b /(2*a);
                 VrcholY = -((b * b) / (4 * a)) + c;
                 return "[" + VrcholX + ";" + VrcholY + "]";
@@ -100,8 +114,6 @@ namespace Rocnikovy_projekt
 
             else
             {
-                //VrcholX = (b / 2); //
-                //VrcholY = a * VrcholX * VrcholX + b * VrcholX + c;
                 VrcholX = -b / (2 * a);
                 VrcholY = -((b * b) / (4 * a)) + c;
                 return "[" + VrcholX + ";" + VrcholY + "]";
