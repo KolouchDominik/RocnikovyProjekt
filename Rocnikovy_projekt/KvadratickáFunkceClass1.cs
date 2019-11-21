@@ -8,7 +8,7 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Rocnikovy_projekt
 {
-    class KvadratickáFunkce
+    class KvadratickaFunkce
     {
         private double a;
         private double b;
@@ -21,7 +21,7 @@ namespace Rocnikovy_projekt
         private ChartArea CA;
         
         
-        public KvadratickáFunkce(double a, double b, double c, Chart graf,double RozA, double RozB)
+        public KvadratickaFunkce(double a, double b, double c, Chart graf,double RozA, double RozB)
         {
             this.a = a;
             this.b = b;
@@ -31,7 +31,7 @@ namespace Rocnikovy_projekt
             this.RozB = RozB;
         }
         //****************************************************************
-        public KvadratickáFunkce()
+        public KvadratickaFunkce()
         {
 
         }
@@ -40,8 +40,6 @@ namespace Rocnikovy_projekt
         
         public void Vykresli()
         {
-
-            double PrvniY=RozA, PosledniY = 0;
             graf.Series["Kvadraticka funkce"].Points.Clear();
 
             if (a > 0)
@@ -51,10 +49,6 @@ namespace Rocnikovy_projekt
                 {
                     double y = a * (x * x) + b * x + c;
                     graf.Series["Kvadraticka funkce"].Points.AddXY(x, y);
-                    if(x==RozB)
-                    {
-                        PosledniY = x;
-                    }
                 }
             }
             else
@@ -65,18 +59,9 @@ namespace Rocnikovy_projekt
                 {
                     double y = a * (x * x) + b * x + c;
                     graf.Series["Kvadraticka funkce"].Points.AddXY(x, y);
-                    if (x == RozB)
-                    {
-                        PosledniY = x;
-                    }
                 }
             }
-
-            CA = graf.ChartAreas[0];
-            CA.CursorY.IsUserSelectionEnabled = true;
-            CA.AxisY.ScaleView.Zoom(PrvniY,PosledniY);
-            CA.AxisY.ScaleView.SizeType = DateTimeIntervalType.Number;
-            CA.AxisY.ScaleView.Zoomable = true;
+            
         }
         //************************************************************************
         public double Koreny(out double x2, out bool ResVR)
