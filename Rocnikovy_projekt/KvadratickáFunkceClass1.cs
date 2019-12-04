@@ -18,7 +18,6 @@ namespace Rocnikovy_projekt
         public double RozB;
 
         private double D, x1, x2;
-        private ChartArea CA;
         
         
         public KvadratickaFunkce(double a, double b, double c, Chart graf,double RozA, double RozB)

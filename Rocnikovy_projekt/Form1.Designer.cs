@@ -61,7 +61,15 @@
             this.KvaTextBox2 = new System.Windows.Forms.TextBox();
             this.KvaTextBox1 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.ExptextBox5 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.ExptextBox4 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.ExptextBox3 = new System.Windows.Forms.TextBox();
+            this.ExptextBox2 = new System.Windows.Forms.TextBox();
+            this.Expbutton1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.ExptextBox1 = new System.Windows.Forms.TextBox();
             this.Explabel1 = new System.Windows.Forms.Label();
@@ -125,7 +133,7 @@
             // 
             this.Kvalabel9.AutoSize = true;
             this.Kvalabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Kvalabel9.Location = new System.Drawing.Point(238, 38);
+            this.Kvalabel9.Location = new System.Drawing.Point(229, 38);
             this.Kvalabel9.Name = "Kvalabel9";
             this.Kvalabel9.Size = new System.Drawing.Size(17, 20);
             this.Kvalabel9.TabIndex = 20;
@@ -302,7 +310,15 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.label5);
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.ExptextBox5);
+            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.ExptextBox4);
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.ExptextBox3);
+            this.tabPage2.Controls.Add(this.ExptextBox2);
+            this.tabPage2.Controls.Add(this.Expbutton1);
             this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Controls.Add(this.ExptextBox1);
             this.tabPage2.Controls.Add(this.Explabel1);
@@ -315,15 +331,81 @@
             this.tabPage2.Text = "Exponenciální funkce";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // label5
             // 
-            this.button1.Location = new System.Drawing.Point(21, 87);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(431, 38);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(10, 13);
+            this.label5.TabIndex = 18;
+            this.label5.Text = ";";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(402, 15);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(72, 13);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Rozsah osy X";
+            // 
+            // ExptextBox5
+            // 
+            this.ExptextBox5.Location = new System.Drawing.Point(442, 34);
+            this.ExptextBox5.Name = "ExptextBox5";
+            this.ExptextBox5.Size = new System.Drawing.Size(28, 20);
+            this.ExptextBox5.TabIndex = 18;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(229, 38);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(17, 20);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "c";
+            // 
+            // ExptextBox4
+            // 
+            this.ExptextBox4.Location = new System.Drawing.Point(402, 34);
+            this.ExptextBox4.Name = "ExptextBox4";
+            this.ExptextBox4.Size = new System.Drawing.Size(27, 20);
+            this.ExptextBox4.TabIndex = 17;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(127, 38);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(18, 20);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "b";
+            // 
+            // ExptextBox3
+            // 
+            this.ExptextBox3.Location = new System.Drawing.Point(233, 61);
+            this.ExptextBox3.Name = "ExptextBox3";
+            this.ExptextBox3.Size = new System.Drawing.Size(100, 20);
+            this.ExptextBox3.TabIndex = 23;
+            // 
+            // ExptextBox2
+            // 
+            this.ExptextBox2.Location = new System.Drawing.Point(127, 61);
+            this.ExptextBox2.Name = "ExptextBox2";
+            this.ExptextBox2.Size = new System.Drawing.Size(100, 20);
+            this.ExptextBox2.TabIndex = 22;
+            // 
+            // Expbutton1
+            // 
+            this.Expbutton1.Location = new System.Drawing.Point(21, 87);
+            this.Expbutton1.Name = "Expbutton1";
+            this.Expbutton1.Size = new System.Drawing.Size(75, 23);
+            this.Expbutton1.TabIndex = 21;
+            this.Expbutton1.Text = "button1";
+            this.Expbutton1.UseVisualStyleBackColor = true;
+            this.Expbutton1.Click += new System.EventHandler(this.Expbutton1_Click);
             // 
             // label1
             // 
@@ -348,12 +430,15 @@
             this.Explabel1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Explabel1.Location = new System.Drawing.Point(24, 15);
             this.Explabel1.Name = "Explabel1";
-            this.Explabel1.Size = new System.Drawing.Size(201, 23);
+            this.Explabel1.Size = new System.Drawing.Size(257, 23);
             this.Explabel1.TabIndex = 8;
-            this.Explabel1.Text = "Rovnice ve tvaru: a^x";
+            this.Explabel1.Text = "Rovnice ve tvaru: a^(x-b)+c";
             // 
             // chart2
             // 
+            chartArea2.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
+            chartArea2.CursorX.AutoScroll = false;
+            chartArea2.CursorY.AutoScroll = false;
             chartArea2.Name = "ChartArea1";
             this.chart2.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
@@ -362,12 +447,13 @@
             this.chart2.Name = "chart2";
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.IsXValueIndexed = true;
             series2.Legend = "Legend1";
-            series2.Name = "Exponenciální";
+            series2.Name = "Kvadraticka funkce";
             this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(694, 512);
-            this.chart2.TabIndex = 7;
-            this.chart2.Text = "chart4";
+            this.chart2.TabIndex = 26;
+            this.chart2.Text = "chart2";
             // 
             // tabPage3
             // 
@@ -462,7 +548,6 @@
         private System.Windows.Forms.TextBox KvaTextBox2;
         private System.Windows.Forms.TextBox KvaTextBox1;
         private System.Windows.Forms.Button KvaButton1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart5;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
         private System.Windows.Forms.Label Kvalabel2;
@@ -481,7 +566,16 @@
         private System.Windows.Forms.Label Explabel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox ExptextBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Expbutton1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox ExptextBox3;
+        private System.Windows.Forms.TextBox ExptextBox2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox ExptextBox5;
+        private System.Windows.Forms.TextBox ExptextBox4;
+        private System.Windows.Forms.Label label5;
     }
 }
 

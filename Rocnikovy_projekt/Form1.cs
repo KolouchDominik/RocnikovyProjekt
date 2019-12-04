@@ -30,13 +30,13 @@ namespace Rocnikovy_projekt
         private void KvaButton1_Click(object sender, EventArgs e)
         { 
             double x1, x2 = 0;
-            if (double.TryParse(KvaTextBox1.Text, out double cislo1)
-                && double.TryParse(KvaTextBox2.Text, out double cislo2)
-                && double.TryParse(KvaTextBox3.Text, out double cislo3)
-                && double.TryParse(KvaTextBox4.Text, out double cislo4)
-                && double.TryParse(KvaTextBox5.Text, out double cislo5))
+            if (double.TryParse(KvaTextBox1.Text, out double KvaA)
+                && double.TryParse(KvaTextBox2.Text, out double KvaB)
+                && double.TryParse(KvaTextBox3.Text, out double KvaC)
+                && double.TryParse(KvaTextBox4.Text, out double KvaRozA)
+                && double.TryParse(KvaTextBox5.Text, out double KvaRozB))
             {
-                KvaFun = new KvadratickaFunkce(cislo1, cislo2, cislo3, chart1, cislo4, cislo5);
+                KvaFun = new KvadratickaFunkce(KvaA, KvaB, KvaC, chart1, KvaRozA, KvaRozB);
 
                 KvaFun.Vykresli();
                 x1 = KvaFun.Koreny(out x2, out bool ReseniVR);
@@ -97,15 +97,20 @@ namespace Rocnikovy_projekt
         #endregion
         // Kvadratická funkce konec *****************************************************************************************************************************
 
-        private void Button1_Click(object sender, EventArgs e)
+       
+
+        private void Expbutton1_Click(object sender, EventArgs e)
         {
-            if (double.TryParse(ExptextBox1.Text, out double zaklad))
+            if (double.TryParse(ExptextBox1.Text, out double ExpA)
+                && double.TryParse(ExptextBox2.Text, out double ExpB)
+                && double.TryParse(ExptextBox3.Text, out double ExpC)
+                && double.TryParse(ExptextBox4.Text, out double ExpRozA)
+                && double.TryParse(ExptextBox5.Text, out double ExpRozB))
             {
-                ExpFun = new ExponencialniFunkce(zaklad,-4,-6,chart2);
+                ExpFun = new ExponencialniFunkce(ExpA, ExpB, ExpC, chart2,ExpRozA,ExpRozB);
                 ExpFun.Vykresli();
             }
         }
-
     }
 
 }

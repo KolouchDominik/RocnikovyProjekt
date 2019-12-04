@@ -9,7 +9,9 @@ namespace Rocnikovy_projekt
 {
     class ExponencialniFunkce
     {
-        private double zaklad;
+        private double a;
+        private double b;
+        private double c;
         private double rozA;
         private double rozB;
         private double y;
@@ -20,9 +22,11 @@ namespace Rocnikovy_projekt
 
         }
 
-        public ExponencialniFunkce(double zaklad, double rozA, double rozB, Chart graf)
+        public ExponencialniFunkce(double a, double b,double c, Chart graf, double rozA,double rozB)
         {
-            this.zaklad = zaklad;
+            this.a = a;
+            this.b = b;
+            this.c = c;
             this.rozA = rozA;
             this.rozB = rozB;
             this.graf = graf;
@@ -33,7 +37,7 @@ namespace Rocnikovy_projekt
             graf.Series["Exponenciální"].Points.Clear();
             for(double x = rozA;x <rozB;++x)
             {
-                y = Math.Pow(zaklad, x);
+                y = Math.Pow(a, x-b)+c;
                 graf.Series["Exponenciální"].Points.AddXY(x, y);
             }
         }
