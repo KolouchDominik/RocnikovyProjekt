@@ -50,26 +50,14 @@ namespace Rocnikovy_projekt
         public void Vykresli()
         {
             graf.Series["Kvadraticka funkce"].Points.Clear();
+            
 
-            if (a > 0)
+            for (double x = rozA; x <= rozB; x=x+0.5)
             {
-
-                for (double x = rozA; x <= rozB; ++x)
-                {
-                    double y = a * (x * x) + b * x + c;
-                    graf.Series["Kvadraticka funkce"].Points.AddXY(x, y);
-                }
+                double y = a * (x * x) + b * x + c;
+                graf.Series["Kvadraticka funkce"].Points.AddXY(x, y);
             }
-            else
-            {
-
-
-                for (double x = rozA; x <= rozB; ++x)
-                {
-                    double y = a * (x * x) + b * x + c;
-                    graf.Series["Kvadraticka funkce"].Points.AddXY(x, y);
-                }
-            }
+            
             
         }
         //************************************************************************

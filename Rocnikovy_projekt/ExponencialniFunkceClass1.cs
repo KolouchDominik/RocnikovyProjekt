@@ -43,21 +43,36 @@ namespace Rocnikovy_projekt
 
         public void Vykresli()
         {
+
             graf.Series["Exponencialni funkce"].Points.Clear();
 
             for (double x = rozA; x < rozB; x = x + 0.5) //x se inkrementuje po 0.5, kvůli problému při vykreslování grafu
             {
-                y = Math.Pow(a, x - b) + c;
+                y = Math.Pow(a, x    - b) + c;
                 graf.Series["Exponencialni funkce"].Points.AddXY(x, y);
             }
         }
 
+     
+
         public string Vlastnosti_ExpFun()
         {
-            string vlastnosti = "Definiční obor: všechna reálná čísla" + "\n";
+            string pom;
+
+            if (Rostouci()) pom = "roustoucí \nZdola omezená";
+            else pom = "klesající \nZdola omezená";
+
+            string vlastnosti = "Definiční obor: všechna reálná čísla" + "\nObor hodnot: "+ "("+ c +";∞)"+"\n"+pom + "\nNemá maximum ani minimum";
             return vlastnosti;
         }
         //**********************************************************
+        private bool Rostouci()
+        {
+            if (a > 1) return true;
+            else return false;
+        }
+        
+        
     
     }
 }

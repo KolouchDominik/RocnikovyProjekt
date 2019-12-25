@@ -109,9 +109,13 @@ namespace Rocnikovy_projekt
                 && double.TryParse(ExptextBox4.Text, out double ExpRozA)
                 && double.TryParse(ExptextBox5.Text, out double ExpRozB))
             {
-                ExpFun = new ExponencialniFunkce(ExpA, ExpB, ExpC, chart2,ExpRozA,ExpRozB);
-                ExpFun.Vykresli();
-                ExpButtonClick = true;
+                if (ExpA > 0)
+                {
+                    ExpFun = new ExponencialniFunkce(ExpA, ExpB, ExpC, chart2, ExpRozA, ExpRozB);
+                    ExpFun.Vykresli();
+                    ExpButtonClick = true;
+                }
+                else MessageBox.Show("Základ \"a\" musí být větší než 0 "); //viditelné úvozovky
             }
         }
 
@@ -129,9 +133,9 @@ namespace Rocnikovy_projekt
 
         private void ExptextBox5_TextChanged(object sender, EventArgs e)
         {
-            if (double.TryParse(ExptextBox4.Text, out double RozB) && ExpButtonClick)
+            if (double.TryParse(ExptextBox5.Text, out double RozB) && ExpButtonClick)
             {
-                ExpFun.NastavRozA(RozB);
+                ExpFun.NastavRozB(RozB);
                 ExpFun.Vykresli();
             }
         }
