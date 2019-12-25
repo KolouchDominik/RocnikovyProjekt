@@ -23,7 +23,8 @@ namespace Rocnikovy_projekt
 
         KvadratickaFunkce KvaFun;
         ExponencialniFunkce ExpFun;
-        bool KvaButtonclick = false;
+        bool KvaButtonClick = false, ExpButtonClick;
+        
 
         // Kvadratická funkce ***********************************************************************************************************************************
         #region Kvadratická funkce
@@ -54,7 +55,7 @@ namespace Rocnikovy_projekt
                 Kvalabel4.Text = "Definiční obor: " + KvaFun.Definicni_obor();
                 Kvalabel5.Text = KvaFun.MaxMin();
 
-                KvaButtonclick = true;
+                KvaButtonClick = true;
             }
 
             else MessageBox.Show("špantě zadané parametry, musí být obsaženy pouze čísla!");
@@ -73,22 +74,22 @@ namespace Rocnikovy_projekt
         private void KvaTextBox4_TextChanged(object sender, EventArgs e)
         {
             
-            bool spravne = double.TryParse(KvaTextBox4.Text, out double cislo);
+            bool spravne = double.TryParse(KvaTextBox4.Text, out double RozA);
 
-            if (spravne&&KvaButtonclick)
+            if (spravne&&KvaButtonClick)
             {
-                KvaFun.RozA = cislo;
+                KvaFun.NastavRozA(RozA);
                 KvaFun.Vykresli();
             }
         }
 
         private void KvaTextBox5_TextChanged(object sender, EventArgs e)
         {
-            bool spravne = double.TryParse(KvaTextBox5.Text, out double cislo);
+            bool spravne = double.TryParse(KvaTextBox5.Text, out double RozB);
 
-            if(spravne&&KvaButtonclick)
+            if(spravne&&KvaButtonClick)
             {
-                KvaFun.RozB = cislo;
+                KvaFun.NastavRozB(RozB);
                 KvaFun.Vykresli();
             }
         }
@@ -97,10 +98,11 @@ namespace Rocnikovy_projekt
         #endregion
         // Kvadratická funkce konec *****************************************************************************************************************************
 
-       
+        #region Exponencialni funkce
 
         private void Expbutton1_Click(object sender, EventArgs e)
         {
+            
             if (double.TryParse(ExptextBox1.Text, out double ExpA)
                 && double.TryParse(ExptextBox2.Text, out double ExpB)
                 && double.TryParse(ExptextBox3.Text, out double ExpC)
@@ -109,8 +111,48 @@ namespace Rocnikovy_projekt
             {
                 ExpFun = new ExponencialniFunkce(ExpA, ExpB, ExpC, chart2,ExpRozA,ExpRozB);
                 ExpFun.Vykresli();
+                ExpButtonClick = true;
             }
         }
+
+
+        private void ExptextBox4_TextChanged(object sender, EventArgs e)
+        {
+            if(double.TryParse(ExptextBox4.Text, out double RozA)&&ExpButtonClick)
+            {
+                ExpFun.NastavRozA(RozA);
+                ExpFun.Vykresli();
+            }
+        }
+
+       
+
+        private void ExptextBox5_TextChanged(object sender, EventArgs e)
+        {
+            if (double.TryParse(ExptextBox4.Text, out double RozB) && ExpButtonClick)
+            {
+                ExpFun.NastavRozA(RozB);
+                ExpFun.Vykresli();
+            }
+        }
+
+        #endregion
+
+        #region Goniometricke funkce
+
+        private void Gonbutton1_Click(object sender, EventArgs e)
+        {
+            if (double.TryParse(GontextBox1.Text, out double stranaA) 
+            && double.TryParse(GontextBox2.Text, out double stranaB) 
+            && double.TryParse(GontextBox3.Text, out double stranaC))
+            {
+                GoniometrickeFunkce gonFun = new GoniometrickeFunkce(stranaA, stranaB, stranaC,Gonchart1);
+                Gonlabel1.Text = gonFun.vypocet();
+
+            }
+        }
+
+        #endregion
     }
 
 }

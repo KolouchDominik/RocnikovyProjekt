@@ -14,20 +14,20 @@ namespace Rocnikovy_projekt
         private double b;
         private double c;
         private Chart graf;
-        public double RozA;
-        public double RozB;
+        private double rozA;
+        private double rozB;
 
         private double D, x1, x2;
         
         
-        public KvadratickaFunkce(double a, double b, double c, Chart graf,double RozA, double RozB)
+        public KvadratickaFunkce(double a, double b, double c, Chart graf,double rozA, double rozB)
         {
             this.a = a;
             this.b = b;
             this.c = c;
             this.graf = graf;
-            this.RozA = RozA;
-            this.RozB = RozB;
+            this.rozA = rozA;
+            this.rozB = rozB;
         }
         //****************************************************************
         public KvadratickaFunkce()
@@ -37,6 +37,16 @@ namespace Rocnikovy_projekt
         //*****************************************************************
 
         
+
+
+        public void NastavRozA(double rozA)
+        {
+            this.rozA = rozA;
+        }
+        public void NastavRozB(double rozB)
+        {
+            this.rozB = rozB;
+        }
         public void Vykresli()
         {
             graf.Series["Kvadraticka funkce"].Points.Clear();
@@ -44,7 +54,7 @@ namespace Rocnikovy_projekt
             if (a > 0)
             {
 
-                for (double x = RozA; x <= RozB; ++x)
+                for (double x = rozA; x <= rozB; ++x)
                 {
                     double y = a * (x * x) + b * x + c;
                     graf.Series["Kvadraticka funkce"].Points.AddXY(x, y);
@@ -54,7 +64,7 @@ namespace Rocnikovy_projekt
             {
 
 
-                for (double x = RozA; x <= RozB; ++x)
+                for (double x = rozA; x <= rozB; ++x)
                 {
                     double y = a * (x * x) + b * x + c;
                     graf.Series["Kvadraticka funkce"].Points.AddXY(x, y);

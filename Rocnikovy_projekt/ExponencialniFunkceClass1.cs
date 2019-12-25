@@ -22,7 +22,7 @@ namespace Rocnikovy_projekt
 
         }
 
-        public ExponencialniFunkce(double a, double b,double c, Chart graf, double rozA,double rozB)
+        public ExponencialniFunkce(double a, double b, double c, Chart graf, double rozA, double rozB)
         {
             this.a = a;
             this.b = b;
@@ -32,15 +32,32 @@ namespace Rocnikovy_projekt
             this.graf = graf;
         }
 
+        public void NastavRozA(double rozA)
+        {
+            this.rozA = rozA;
+        }
+        public void NastavRozB(double rozB)
+        {
+            this.rozB = rozB;
+        }
+
         public void Vykresli()
         {
-            graf.Series["Exponenciální"].Points.Clear();
-            for(double x = rozA;x <rozB;++x)
+            graf.Series["Exponencialni funkce"].Points.Clear();
+
+            for (double x = rozA; x < rozB; x = x + 0.5) //x se inkrementuje po 0.5, kvůli problému při vykreslování grafu
             {
-                y = Math.Pow(a, x-b)+c;
-                graf.Series["Exponenciální"].Points.AddXY(x, y);
+                y = Math.Pow(a, x - b) + c;
+                graf.Series["Exponencialni funkce"].Points.AddXY(x, y);
             }
         }
 
+        public string Vlastnosti_ExpFun()
+        {
+            string vlastnosti = "Definiční obor: všechna reálná čísla" + "\n";
+            return vlastnosti;
+        }
+        //**********************************************************
+    
     }
 }
