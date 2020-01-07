@@ -23,7 +23,7 @@ namespace Rocnikovy_projekt
 
         KvadratickaFunkce KvaFun;
         ExponencialniFunkce ExpFun;
-        bool KvaButtonClick = false, ExpButtonClick;
+        bool KvaButtonClick = false, ExpButtonClick=false;
         
 
         // Kvadratická funkce ***********************************************************************************************************************************

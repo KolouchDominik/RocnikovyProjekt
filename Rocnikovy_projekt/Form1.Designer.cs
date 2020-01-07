@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea25 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend25 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series25 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea26 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend26 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series26 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea27 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend27 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series27 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea28 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend28 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series28 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Kvalabel9 = new System.Windows.Forms.Label();
@@ -226,22 +226,22 @@
             // 
             // chart1
             // 
-            chartArea25.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
-            chartArea25.CursorX.AutoScroll = false;
-            chartArea25.CursorY.AutoScroll = false;
-            chartArea25.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea25);
-            legend25.Name = "Legend1";
-            this.chart1.Legends.Add(legend25);
+            chartArea6.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
+            chartArea6.CursorX.AutoScroll = false;
+            chartArea6.CursorY.AutoScroll = false;
+            chartArea6.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chart1.Legends.Add(legend6);
             this.chart1.Location = new System.Drawing.Point(339, 34);
             this.chart1.Name = "chart1";
-            series25.ChartArea = "ChartArea1";
-            series25.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series25.IsVisibleInLegend = false;
-            series25.IsXValueIndexed = true;
-            series25.Legend = "Legend1";
-            series25.Name = "Kvadraticka funkce";
-            this.chart1.Series.Add(series25);
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series6.IsVisibleInLegend = false;
+            series6.IsXValueIndexed = true;
+            series6.Legend = "Legend1";
+            series6.Name = "Kvadraticka funkce";
+            this.chart1.Series.Add(series6);
             this.chart1.Size = new System.Drawing.Size(694, 512);
             this.chart1.TabIndex = 8;
             this.chart1.Text = "chart1";
@@ -338,8 +338,8 @@
             this.tabPage2.Controls.Add(this.chart2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage2.Size = new System.Drawing.Size(1039, 553);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1039, 552);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Exponenciální funkce";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -461,24 +461,24 @@
             // 
             // chart2
             // 
-            chartArea26.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
-            chartArea26.CursorX.AutoScroll = false;
-            chartArea26.CursorY.AutoScroll = false;
-            chartArea26.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea26);
-            legend26.Name = "Legend1";
-            this.chart2.Legends.Add(legend26);
+            chartArea7.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
+            chartArea7.CursorX.AutoScroll = false;
+            chartArea7.CursorY.AutoScroll = false;
+            chartArea7.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.chart2.Legends.Add(legend7);
             this.chart2.Location = new System.Drawing.Point(339, 34);
             this.chart2.Name = "chart2";
-            series26.ChartArea = "ChartArea1";
-            series26.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series26.IsVisibleInLegend = false;
-            series26.IsXValueIndexed = true;
-            series26.Legend = "Legend1";
-            series26.LegendText = "Exponencialni";
-            series26.LegendToolTip = "Exponencialni";
-            series26.Name = "Exponencialni funkce";
-            this.chart2.Series.Add(series26);
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series7.IsVisibleInLegend = false;
+            series7.IsXValueIndexed = true;
+            series7.Legend = "Legend1";
+            series7.LegendText = "Exponencialni";
+            series7.LegendToolTip = "Exponencialni";
+            series7.Name = "Exponencialni funkce";
+            this.chart2.Series.Add(series7);
             this.chart2.Size = new System.Drawing.Size(694, 512);
             this.chart2.TabIndex = 26;
             this.chart2.Text = "chart2";
@@ -496,34 +496,30 @@
             this.tabPage3.Controls.Add(this.label8);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage3.Size = new System.Drawing.Size(1039, 553);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1039, 552);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Goniometrická funkce";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // Gonchart1
             // 
-            chartArea27.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
-            chartArea27.CursorX.AutoScroll = false;
-            chartArea27.CursorY.AutoScroll = false;
-            chartArea27.Name = "ChartArea1";
-            this.Gonchart1.ChartAreas.Add(chartArea27);
-            legend27.Name = "Legend1";
-            this.Gonchart1.Legends.Add(legend27);
+            chartArea5.Name = "ChartArea1";
+            this.Gonchart1.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.Gonchart1.Legends.Add(legend5);
             this.Gonchart1.Location = new System.Drawing.Point(339, 34);
             this.Gonchart1.Name = "Gonchart1";
-            series27.ChartArea = "ChartArea1";
-            series27.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series27.IsVisibleInLegend = false;
-            series27.IsXValueIndexed = true;
-            series27.Legend = "Legend1";
-            series27.LegendText = "Exponencialni";
-            series27.LegendToolTip = "Exponencialni";
-            series27.Name = "Goniometricka funkce";
-            this.Gonchart1.Series.Add(series27);
+            series5.BorderWidth = 4;
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            series5.IsVisibleInLegend = false;
+            series5.Legend = "Legend1";
+            series5.Name = "Goniometricka funkce";
+            this.Gonchart1.Series.Add(series5);
             this.Gonchart1.Size = new System.Drawing.Size(694, 512);
-            this.Gonchart1.TabIndex = 32;
+            this.Gonchart1.TabIndex = 33;
             this.Gonchart1.Text = "chart4";
             // 
             // Gonlabel1
@@ -602,26 +598,26 @@
             this.tabPage4.Controls.Add(this.chart3);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage4.Size = new System.Drawing.Size(1039, 553);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1039, 552);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Logaritmická funkce";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // chart3
             // 
-            chartArea28.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea28);
-            legend28.Name = "Legend1";
-            this.chart3.Legends.Add(legend28);
+            chartArea8.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea8);
+            legend8.Name = "Legend1";
+            this.chart3.Legends.Add(legend8);
             this.chart3.Location = new System.Drawing.Point(339, 34);
             this.chart3.Name = "chart3";
-            series28.ChartArea = "ChartArea1";
-            series28.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series28.IsXValueIndexed = true;
-            series28.Legend = "Legend1";
-            series28.Name = "Kvadraticka funkce";
-            this.chart3.Series.Add(series28);
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series8.IsXValueIndexed = true;
+            series8.Legend = "Legend1";
+            series8.Name = "Kvadraticka funkce";
+            this.chart3.Series.Add(series8);
             this.chart3.Size = new System.Drawing.Size(694, 512);
             this.chart3.TabIndex = 9;
             this.chart3.Text = "chart3";

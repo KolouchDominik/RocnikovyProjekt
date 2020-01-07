@@ -13,8 +13,12 @@ namespace Rocnikovy_projekt
         private double a;
         private double b;
         private double c;
+        private double alpha;
+        private double beta;
+        private double gamma;
         private Chart graf;
         private double vyska;
+        private double prepona;
         double pom;
 
 
@@ -24,37 +28,66 @@ namespace Rocnikovy_projekt
             this.b = b;
             this.c = c;
             this.graf = graf;
+            
         }
 
 
         private bool kontrola()
         {
             double[] strany = { a, b, c };
+            prepona = strany.Max();
             if (strany.Sum() - strany.Max() > strany.Max()) return true;
             else return false;
         }
 
             
-
+        
         public string vypocet()
         {
             if (kontrola())
             {
 
-                double alpha = Math.Acos((b * b + c * c - a * a) / (2 * b * c)) * (180 / Math.PI);
-                double beta = Math.Acos((a * a + c * c - b * b) / (2 * a * c)) * (180 / Math.PI);
-                double gamma = 180 - alpha - beta;
+                alpha = Math.Acos((b * b + c * c - a * a) / (2 * b * c)) * (180 / Math.PI);
+                beta = Math.Acos((a * a + c * c - b * b) / (2 * a * c)) * (180 / Math.PI);
+                gamma = 180 - alpha - beta;
+                double SouVysky = SouVysky_delka(out vyska);
 
-                 
+                
+                graf.Series["Goniometricka funkce"].Points.Clear();
+                graf.Series["Goniometricka funkce"].Points.AddXY(0, 0);
+                graf.Series["Goniometricka funkce"].Points[0].Label = "A";
+                graf.Series["Goniometricka funkce"].Points.AddXY(c, 0);
+                graf.Series["Goniometricka funkce"].Points[1].Label = "B";
+                graf.Series["Goniometricka funkce"].Points.AddXY(SouVysky,vyska);
+                graf.Series["Goniometricka funkce"].Points[2].Label = "C";
+                graf.Series["Goniometricka funkce"].Points.AddXY(0, 0);
+
                 
 
+                
+                graf.ChartAreas["ChartArea1"].AxisY.Maximum =c+1;
+                graf.ChartAreas["ChartArea1"].AxisY.Minimum = -1;
+                graf.ChartAreas["ChartArea1"].AxisY.Interval = 1;
+                graf.ChartAreas["ChartArea1"].AxisX.Maximum = c+1;
+                graf.ChartAreas["ChartArea1"].AxisX.Minimum = -1;
+                graf.ChartAreas["ChartArea1"].AxisX.Interval = 1;
 
                 return "Alpha: " + alpha + "°\nBeta: " + beta + "°\nGamma: " + gamma + "°";
 
             }
 
 
-            else return "součet dvou kratších stran \nmusí být větší než strana nejdelší";
+            else return "součet dvou kratších stran \n  musí být větší než strana nejdelší";
+        }
+
+        private double SouVysky_delka(out double vyska)
+        {
+            double p = (a + b + c) / 2; //poloviční obvod
+            vyska = (2 / a) * Math.Sqrt(p * (p - a) * (p - b) * (p - c));
+
+            double SouXVysky = Math.Sqrt((b * b) - (vyska * vyska));
+            return SouXVysky;
+            
         }
 
         
