@@ -53,11 +53,7 @@
             this.Kvalabel6 = new System.Windows.Forms.Label();
             this.KvaTextBox5 = new System.Windows.Forms.TextBox();
             this.KvaTextBox4 = new System.Windows.Forms.TextBox();
-            this.Kvalabel5 = new System.Windows.Forms.Label();
-            this.Kvalabel4 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.Kvalabel3 = new System.Windows.Forms.Label();
-            this.Kvalabel2 = new System.Windows.Forms.Label();
             this.Kvalabel1 = new System.Windows.Forms.Label();
             this.KvaTextBox3 = new System.Windows.Forms.TextBox();
             this.KvaTextBox2 = new System.Windows.Forms.TextBox();
@@ -88,15 +84,19 @@
             this.GontextBox3 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.LogChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label9 = new System.Windows.Forms.Label();
+            this.logtextBox3 = new System.Windows.Forms.TextBox();
+            this.logtextBox2 = new System.Windows.Forms.TextBox();
+            this.Logchart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.LogLabel2 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.LogLabel1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.logbutton1 = new System.Windows.Forms.Button();
+            this.logtextBox1 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.LogLabel2 = new System.Windows.Forms.Label();
+            this.Kvalabel2 = new System.Windows.Forms.Label();
+            this.Kvalabel3 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -105,7 +105,7 @@
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Gonchart1)).BeginInit();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LogChart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logchart1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -114,7 +114,6 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.ImageList = this.imageList1;
             this.tabControl1.Location = new System.Drawing.Point(13, 13);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -132,8 +131,6 @@
             this.tabPage1.Controls.Add(this.Kvalabel6);
             this.tabPage1.Controls.Add(this.KvaTextBox5);
             this.tabPage1.Controls.Add(this.KvaTextBox4);
-            this.tabPage1.Controls.Add(this.Kvalabel5);
-            this.tabPage1.Controls.Add(this.Kvalabel4);
             this.tabPage1.Controls.Add(this.chart1);
             this.tabPage1.Controls.Add(this.Kvalabel3);
             this.tabPage1.Controls.Add(this.Kvalabel2);
@@ -144,14 +141,13 @@
             this.tabPage1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tabPage1.ForeColor = System.Drawing.Color.Black;
             this.tabPage1.ImageKey = "kva.png";
-            this.tabPage1.Location = new System.Drawing.Point(4, 23);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1039, 551);
+            this.tabPage1.Size = new System.Drawing.Size(1039, 552);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Kvadraticka funkce";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.TabPage1_Click);
             // 
             // KvaButton1
             // 
@@ -239,26 +235,6 @@
             this.KvaTextBox4.TabIndex = 14;
             this.KvaTextBox4.TextChanged += new System.EventHandler(this.KvaTextBox4_TextChanged);
             // 
-            // Kvalabel5
-            // 
-            this.Kvalabel5.AutoSize = true;
-            this.Kvalabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Kvalabel5.Location = new System.Drawing.Point(24, 396);
-            this.Kvalabel5.Name = "Kvalabel5";
-            this.Kvalabel5.Size = new System.Drawing.Size(18, 20);
-            this.Kvalabel5.TabIndex = 13;
-            this.Kvalabel5.Text = "1";
-            // 
-            // Kvalabel4
-            // 
-            this.Kvalabel4.AutoSize = true;
-            this.Kvalabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Kvalabel4.Location = new System.Drawing.Point(24, 376);
-            this.Kvalabel4.Name = "Kvalabel4";
-            this.Kvalabel4.Size = new System.Drawing.Size(18, 20);
-            this.Kvalabel4.TabIndex = 12;
-            this.Kvalabel4.Text = "1";
-            // 
             // chart1
             // 
             chartArea18.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
@@ -281,26 +257,6 @@
             this.chart1.TabIndex = 8;
             this.chart1.Text = "chart1";
             // 
-            // Kvalabel3
-            // 
-            this.Kvalabel3.AutoSize = true;
-            this.Kvalabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Kvalabel3.Location = new System.Drawing.Point(24, 352);
-            this.Kvalabel3.Name = "Kvalabel3";
-            this.Kvalabel3.Size = new System.Drawing.Size(18, 20);
-            this.Kvalabel3.TabIndex = 11;
-            this.Kvalabel3.Text = "1";
-            // 
-            // Kvalabel2
-            // 
-            this.Kvalabel2.AutoSize = true;
-            this.Kvalabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Kvalabel2.Location = new System.Drawing.Point(24, 330);
-            this.Kvalabel2.Name = "Kvalabel2";
-            this.Kvalabel2.Size = new System.Drawing.Size(18, 20);
-            this.Kvalabel2.TabIndex = 10;
-            this.Kvalabel2.Text = "1";
-            // 
             // Kvalabel1
             // 
             this.Kvalabel1.AutoSize = true;
@@ -317,7 +273,6 @@
             this.KvaTextBox3.Name = "KvaTextBox3";
             this.KvaTextBox3.Size = new System.Drawing.Size(116, 20);
             this.KvaTextBox3.TabIndex = 2;
-            this.KvaTextBox3.TextChanged += new System.EventHandler(this.KvaTextBox1_TextChanged);
             // 
             // KvaTextBox2
             // 
@@ -325,7 +280,6 @@
             this.KvaTextBox2.Name = "KvaTextBox2";
             this.KvaTextBox2.Size = new System.Drawing.Size(116, 20);
             this.KvaTextBox2.TabIndex = 1;
-            this.KvaTextBox2.TextChanged += new System.EventHandler(this.KvaTextBox1_TextChanged);
             // 
             // KvaTextBox1
             // 
@@ -350,10 +304,10 @@
             this.tabPage2.Controls.Add(this.ExptextBox1);
             this.tabPage2.Controls.Add(this.Explabel1);
             this.tabPage2.Controls.Add(this.chart2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 23);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1039, 551);
+            this.tabPage2.Size = new System.Drawing.Size(1039, 552);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Exponenciální funkce";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -509,10 +463,10 @@
             this.tabPage3.Controls.Add(this.GontextBox1);
             this.tabPage3.Controls.Add(this.GontextBox3);
             this.tabPage3.Controls.Add(this.label8);
-            this.tabPage3.Location = new System.Drawing.Point(4, 23);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1039, 551);
+            this.tabPage3.Size = new System.Drawing.Size(1039, 552);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Goniometrická funkce";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -610,49 +564,92 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.label9);
+            this.tabPage4.Controls.Add(this.logtextBox3);
+            this.tabPage4.Controls.Add(this.logtextBox2);
+            this.tabPage4.Controls.Add(this.Logchart1);
             this.tabPage4.Controls.Add(this.LogLabel2);
+            this.tabPage4.Controls.Add(this.label10);
             this.tabPage4.Controls.Add(this.LogLabel1);
-            this.tabPage4.Controls.Add(this.button1);
-            this.tabPage4.Controls.Add(this.LogChart);
-            this.tabPage4.Controls.Add(this.textBox3);
-            this.tabPage4.Controls.Add(this.label11);
-            this.tabPage4.Controls.Add(this.textBox2);
+            this.tabPage4.Controls.Add(this.logbutton1);
+            this.tabPage4.Controls.Add(this.logtextBox1);
             this.tabPage4.Controls.Add(this.label12);
-            this.tabPage4.Location = new System.Drawing.Point(4, 23);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1039, 551);
+            this.tabPage4.Size = new System.Drawing.Size(1039, 552);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Logaritmická funkce";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // label9
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(50, 116);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 28);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "Vykresli Graf";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(431, 38);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(10, 13);
+            this.label9.TabIndex = 21;
+            this.label9.Text = ";";
             // 
-            // LogChart
+            // logtextBox3
             // 
+            this.logtextBox3.Location = new System.Drawing.Point(442, 34);
+            this.logtextBox3.Name = "logtextBox3";
+            this.logtextBox3.Size = new System.Drawing.Size(28, 20);
+            this.logtextBox3.TabIndex = 19;
+            this.logtextBox3.TextChanged += new System.EventHandler(this.LogtextBox3_TextChanged);
+            // 
+            // logtextBox2
+            // 
+            this.logtextBox2.Location = new System.Drawing.Point(402, 34);
+            this.logtextBox2.Name = "logtextBox2";
+            this.logtextBox2.Size = new System.Drawing.Size(27, 20);
+            this.logtextBox2.TabIndex = 18;
+            this.logtextBox2.TextChanged += new System.EventHandler(this.LogtextBox2_TextChanged);
+            // 
+            // Logchart1
+            // 
+            chartArea17.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
+            chartArea17.CursorX.AutoScroll = false;
+            chartArea17.CursorY.AutoScroll = false;
             chartArea17.Name = "ChartArea1";
-            this.LogChart.ChartAreas.Add(chartArea17);
+            this.Logchart1.ChartAreas.Add(chartArea17);
             legend17.Name = "Legend1";
-            this.LogChart.Legends.Add(legend17);
-            this.LogChart.Location = new System.Drawing.Point(339, 34);
-            this.LogChart.Name = "LogChart";
+            this.Logchart1.Legends.Add(legend17);
+            this.Logchart1.Location = new System.Drawing.Point(339, 34);
+            this.Logchart1.Name = "Logchart1";
             series17.ChartArea = "ChartArea1";
             series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series17.IsVisibleInLegend = false;
             series17.IsXValueIndexed = true;
             series17.Legend = "Legend1";
-            series17.Name = "Kvadraticka funkce";
-            this.LogChart.Series.Add(series17);
-            this.LogChart.Size = new System.Drawing.Size(694, 512);
-            this.LogChart.TabIndex = 9;
-            this.LogChart.Text = "chart3";
+            series17.LegendText = "Exponencialni";
+            series17.LegendToolTip = "Exponencialni";
+            series17.Name = "Logaritmicka funkce";
+            this.Logchart1.Series.Add(series17);
+            this.Logchart1.Size = new System.Drawing.Size(694, 512);
+            this.Logchart1.TabIndex = 27;
+            this.Logchart1.Text = "chart3";
+            // 
+            // LogLabel2
+            // 
+            this.LogLabel2.AutoSize = true;
+            this.LogLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LogLabel2.Location = new System.Drawing.Point(260, 46);
+            this.LogLabel2.Name = "LogLabel2";
+            this.LogLabel2.Size = new System.Drawing.Size(14, 13);
+            this.LogLabel2.TabIndex = 29;
+            this.LogLabel2.Text = "a";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label10.Location = new System.Drawing.Point(402, 15);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(114, 13);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "Rozsah osy X, X>0";
             // 
             // LogLabel1
             // 
@@ -664,29 +661,23 @@
             this.LogLabel1.TabIndex = 24;
             this.LogLabel1.Text = "Rovnice ve tvaru: y = Log  x";
             // 
-            // textBox3
+            // logbutton1
             // 
-            this.textBox3.Location = new System.Drawing.Point(50, 64);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(116, 20);
-            this.textBox3.TabIndex = 21;
+            this.logbutton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.logbutton1.Location = new System.Drawing.Point(50, 90);
+            this.logbutton1.Name = "logbutton1";
+            this.logbutton1.Size = new System.Drawing.Size(116, 28);
+            this.logbutton1.TabIndex = 25;
+            this.logbutton1.Text = "Vykresli Graf";
+            this.logbutton1.UseVisualStyleBackColor = true;
+            this.logbutton1.Click += new System.EventHandler(this.Logbutton1_Click);
             // 
-            // label11
+            // logtextBox1
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label11.Location = new System.Drawing.Point(17, 85);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(27, 24);
-            this.label11.TabIndex = 27;
-            this.label11.Text = "x:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(50, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(116, 20);
-            this.textBox2.TabIndex = 22;
+            this.logtextBox1.Location = new System.Drawing.Point(50, 64);
+            this.logtextBox1.Name = "logtextBox1";
+            this.logtextBox1.Size = new System.Drawing.Size(116, 20);
+            this.logtextBox1.TabIndex = 21;
             // 
             // label12
             // 
@@ -704,15 +695,25 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "kva.png");
             // 
-            // LogLabel2
+            // Kvalabel2
             // 
-            this.LogLabel2.AutoSize = true;
-            this.LogLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LogLabel2.Location = new System.Drawing.Point(260, 46);
-            this.LogLabel2.Name = "LogLabel2";
-            this.LogLabel2.Size = new System.Drawing.Size(14, 13);
-            this.LogLabel2.TabIndex = 29;
-            this.LogLabel2.Text = "a";
+            this.Kvalabel2.AutoSize = true;
+            this.Kvalabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Kvalabel2.Location = new System.Drawing.Point(24, 330);
+            this.Kvalabel2.Name = "Kvalabel2";
+            this.Kvalabel2.Size = new System.Drawing.Size(18, 20);
+            this.Kvalabel2.TabIndex = 10;
+            this.Kvalabel2.Text = "1";
+            // 
+            // Kvalabel3
+            // 
+            this.Kvalabel3.AutoSize = true;
+            this.Kvalabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Kvalabel3.Location = new System.Drawing.Point(24, 352);
+            this.Kvalabel3.Name = "Kvalabel3";
+            this.Kvalabel3.Size = new System.Drawing.Size(18, 20);
+            this.Kvalabel3.TabIndex = 11;
+            this.Kvalabel3.Text = "1";
             // 
             // Form1
             // 
@@ -736,7 +737,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Gonchart1)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LogChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logchart1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -753,13 +754,8 @@
         private System.Windows.Forms.TextBox KvaTextBox2;
         private System.Windows.Forms.TextBox KvaTextBox1;
         private System.Windows.Forms.Button KvaButton1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart LogChart;
-        private System.Windows.Forms.Label Kvalabel2;
         private System.Windows.Forms.Label Kvalabel1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.Label Kvalabel3;
-        private System.Windows.Forms.Label Kvalabel4;
-        private System.Windows.Forms.Label Kvalabel5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label Kvalabel6;
         private System.Windows.Forms.TextBox KvaTextBox5;
@@ -791,13 +787,18 @@
         private System.Windows.Forms.Label Gonlabel1;
         private System.Windows.Forms.DataVisualization.Charting.Chart Gonchart1;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button logbutton1;
         private System.Windows.Forms.Label LogLabel1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox logtextBox1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label LogLabel2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox logtextBox3;
+        private System.Windows.Forms.TextBox logtextBox2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart Logchart1;
+        private System.Windows.Forms.Label Kvalabel3;
+        private System.Windows.Forms.Label Kvalabel2;
     }
 }
 

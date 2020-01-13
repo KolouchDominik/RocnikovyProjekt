@@ -24,8 +24,13 @@ namespace Rocnikovy_projekt
 
         KvadratickaFunkce KvaFun;
         ExponencialniFunkce ExpFun;
-        bool KvaButtonClick = false, ExpButtonClick=false;
-        // Kvadratická funkce ***********************************************************************************************************************************
+        LogaritmickaFunkce LogFun;
+
+        bool KvaButtonClick = false;
+        bool ExpButtonClick = false;
+        bool LogButtonClick = false;
+
+
         #region Kvadratická funkce
         private void KvaButton1_Click(object sender, EventArgs e)
         { 
@@ -49,10 +54,10 @@ namespace Rocnikovy_projekt
                     }
                     else Kvalabel1.Text = "Kořen x1 a x2 = " + x1;
                 }
-                else Kvalabel1.Text = "Nemá řešení v oboru reálných čísel";
-                Kvalabel3.Text = "Vrchol v bodě: " + KvaFun.VrcholXY();
-                Kvalabel4.Text = "Definiční obor: " + KvaFun.Definicni_obor();
-                Kvalabel5.Text = KvaFun.MaxMin();
+                else Kvalabel3.Text = "Nemá řešení v oboru reálných čísel\n" +
+                "Vrchol v bodě: " + KvaFun.VrcholXY() +
+                "\nDefiniční obor: " + KvaFun.Definicni_obor() +"\n"+
+               KvaFun.MaxMin();
 
                 KvaButtonClick = true;
             }
@@ -61,14 +66,7 @@ namespace Rocnikovy_projekt
             
         }
 
-        private void KvaTextBox1_TextChanged(object sender, EventArgs e)
-        {
-            Kvalabel1.Text = "";
-            Kvalabel2.Text = "";
-            Kvalabel3.Text = "";
-            Kvalabel4.Text = "";
-            Kvalabel5.Text = "";
-        }
+      
 
         private void KvaTextBox4_TextChanged(object sender, EventArgs e)
         {
@@ -95,7 +93,6 @@ namespace Rocnikovy_projekt
 
 
         #endregion
-        // Kvadratická funkce konec *****************************************************************************************************************************
 
         #region Exponencialni funkce
 
@@ -139,10 +136,11 @@ namespace Rocnikovy_projekt
             }
         }
 
-        private void TabPage1_Click(object sender, EventArgs e)
-        {
+        
 
-        }
+
+
+
 
         #endregion
 
@@ -159,6 +157,41 @@ namespace Rocnikovy_projekt
 
             }
         }
+
+       
+        #endregion
+
+        #region Logaritmicka funkce
+        private void Logbutton1_Click(object sender, EventArgs e)
+        {
+            if (double.TryParse(logtextBox1.Text, out double a)
+                && double.TryParse(logtextBox2.Text, out double rozA) && rozA > 0
+                && double.TryParse(logtextBox3.Text, out double rozB))
+            {
+                LogFun = new LogaritmickaFunkce(a, rozA, rozB, Logchart1);
+                LogFun.Vykresly();
+                LogButtonClick = true;
+            }
+            else MessageBox.Show("Špatně zadané parametry!");
+        }
+      
+        private void LogtextBox2_TextChanged(object sender, EventArgs e)
+        {
+            if(double.TryParse(logtextBox2.Text,out double rozA)&&LogButtonClick)
+            {
+                LogFun.NastavRozA(rozA);
+                LogFun.Vykresly();
+            }
+        }
+        private void LogtextBox3_TextChanged(object sender, EventArgs e)
+        {
+            if (double.TryParse(logtextBox3.Text, out double rozB) && LogButtonClick)
+            {
+                LogFun.NastavRozB(rozB);
+                LogFun.Vykresly();
+            }
+        }
+
         #endregion
     }
 
