@@ -50,21 +50,16 @@ namespace Rocnikovy_projekt
         public void Vykresli()
         {
             graf.Series["Kvadraticka funkce"].Points.Clear();
-            
-
             for (double x = rozA; x <= rozB; x=x+0.5)
             {
                 double y = a * (x * x) + b * x + c;
                 graf.Series["Kvadraticka funkce"].Points.AddXY(x, y);
             }
-            
-            
         }
         //************************************************************************
         public double Koreny(out double x2, out bool ResVR)
         {
             x2 = 0;
-
             D = b * b - 4 * a * c;
             if (D == 0)
             {
@@ -93,7 +88,6 @@ namespace Rocnikovy_projekt
                 VrcholY = -((b * b) / (4 * a)) + c;
                 return "[" + VrcholX + ";" + VrcholY + "]";
             }
-
             else
             {
                 VrcholX = -b / (2 * a);

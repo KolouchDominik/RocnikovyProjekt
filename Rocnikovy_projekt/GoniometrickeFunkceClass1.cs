@@ -55,11 +55,8 @@ namespace Rocnikovy_projekt
                 
                 graf.Series["Goniometricka funkce"].Points.Clear();
                 graf.Series["Goniometricka funkce"].Points.AddXY(0, 0);
-                graf.Series["Goniometricka funkce"].Points[0].Label = "A";
                 graf.Series["Goniometricka funkce"].Points.AddXY(c, 0);
-                graf.Series["Goniometricka funkce"].Points[1].Label = "B";
                 graf.Series["Goniometricka funkce"].Points.AddXY(SouVysky,vyska);
-                graf.Series["Goniometricka funkce"].Points[2].Label = "C";
                 graf.Series["Goniometricka funkce"].Points.AddXY(0, 0);
 
                 
@@ -73,10 +70,7 @@ namespace Rocnikovy_projekt
                 graf.ChartAreas["ChartArea1"].AxisX.Interval = 1;
 
                 return "Alpha: " + alpha + "°\nBeta: " + beta + "°\nGamma: " + gamma + "°";
-
             }
-
-
             else return "součet dvou kratších stran \n  musí být větší než strana nejdelší";
         }
 
@@ -87,9 +81,6 @@ namespace Rocnikovy_projekt
 
             double SouXVysky = Math.Sqrt((b * b) - (vyska * vyska));
             return SouXVysky;
-            
         }
-
-        
     }
 }

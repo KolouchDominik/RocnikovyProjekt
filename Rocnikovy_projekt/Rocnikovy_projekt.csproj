@@ -70,6 +70,7 @@
     </Compile>
     <Compile Include="GoniometrickeFunkceClass1.cs" />
     <Compile Include="KvadratickáFunkceClass1.cs" />
+    <Compile Include="LogaritmickaFunkceClass1.cs" />
     <Compile Include="NRange1DD.cs" />
     <Compile Include="NRangeAxisView.cs" />
     <Compile Include="NStandardScaleConfigurator.cs" />

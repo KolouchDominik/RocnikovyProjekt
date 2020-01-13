@@ -19,13 +19,12 @@ namespace Rocnikovy_projekt
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         KvadratickaFunkce KvaFun;
         ExponencialniFunkce ExpFun;
         bool KvaButtonClick = false, ExpButtonClick=false;
-        
-
         // Kvadratická funkce ***********************************************************************************************************************************
         #region Kvadratická funkce
         private void KvaButton1_Click(object sender, EventArgs e)
@@ -140,6 +139,11 @@ namespace Rocnikovy_projekt
             }
         }
 
+        private void TabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         #endregion
 
         #region Goniometricke funkce
@@ -155,7 +159,6 @@ namespace Rocnikovy_projekt
 
             }
         }
-
         #endregion
     }
 
