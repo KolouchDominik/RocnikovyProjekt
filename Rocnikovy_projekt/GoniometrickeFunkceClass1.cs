@@ -61,7 +61,7 @@ namespace Rocnikovy_projekt
 
                 
 
-                
+                    
                 graf.ChartAreas["ChartArea1"].AxisY.Maximum =c+1;
                 graf.ChartAreas["ChartArea1"].AxisY.Minimum = -1;
                 graf.ChartAreas["ChartArea1"].AxisY.Interval = 1;

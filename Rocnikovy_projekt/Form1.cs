@@ -110,6 +110,7 @@ namespace Rocnikovy_projekt
                     ExpFun = new ExponencialniFunkce(ExpA, ExpB, ExpC, chart2, ExpRozA, ExpRozB);
                     ExpFun.Vykresli();
                     ExpButtonClick = true;
+                    Explabel3.Text = ExpFun.Vlastnosti_ExpFun();
                 }
                 else MessageBox.Show("Základ \"a\" musí být větší než 0 "); //viditelné úvozovky
             }
@@ -132,7 +133,7 @@ namespace Rocnikovy_projekt
             if (double.TryParse(ExptextBox5.Text, out double RozB) && ExpButtonClick)
             {
                 ExpFun.NastavRozB(RozB);
-                ExpFun.Vykresli();
+                ExpFun.Vykresli();  
             }
         }
 
@@ -171,6 +172,7 @@ namespace Rocnikovy_projekt
                 LogFun = new LogaritmickaFunkce(a, rozA, rozB, Logchart1);
                 LogFun.Vykresly();
                 LogButtonClick = true;
+                LogLabel3.Text = LogFun.Vlastnosti();
             }
             else MessageBox.Show("Špatně zadané parametry!");
         }

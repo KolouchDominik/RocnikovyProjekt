@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea18 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend18 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea19 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend19 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea20 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend20 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea17 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend17 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -54,6 +54,8 @@
             this.KvaTextBox5 = new System.Windows.Forms.TextBox();
             this.KvaTextBox4 = new System.Windows.Forms.TextBox();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.Kvalabel3 = new System.Windows.Forms.Label();
+            this.Kvalabel2 = new System.Windows.Forms.Label();
             this.Kvalabel1 = new System.Windows.Forms.Label();
             this.KvaTextBox3 = new System.Windows.Forms.TextBox();
             this.KvaTextBox2 = new System.Windows.Forms.TextBox();
@@ -95,8 +97,8 @@
             this.logtextBox1 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.Kvalabel2 = new System.Windows.Forms.Label();
-            this.Kvalabel3 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.LogLabel3 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -154,9 +156,9 @@
             this.KvaButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.KvaButton1.Location = new System.Drawing.Point(50, 142);
             this.KvaButton1.Name = "KvaButton1";
-            this.KvaButton1.Size = new System.Drawing.Size(116, 28);
+            this.KvaButton1.Size = new System.Drawing.Size(120, 28);
             this.KvaButton1.TabIndex = 7;
-            this.KvaButton1.Text = "Vykresli Graf";
+            this.KvaButton1.Text = "Vykresli graf";
             this.KvaButton1.UseVisualStyleBackColor = true;
             this.KvaButton1.Click += new System.EventHandler(this.KvaButton1_Click);
             // 
@@ -237,31 +239,51 @@
             // 
             // chart1
             // 
-            chartArea18.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
-            chartArea18.CursorX.AutoScroll = false;
-            chartArea18.CursorY.AutoScroll = false;
-            chartArea18.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea18);
-            legend18.Name = "Legend1";
-            this.chart1.Legends.Add(legend18);
+            chartArea1.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
+            chartArea1.CursorX.AutoScroll = false;
+            chartArea1.CursorY.AutoScroll = false;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(339, 34);
             this.chart1.Name = "chart1";
-            series18.ChartArea = "ChartArea1";
-            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series18.IsVisibleInLegend = false;
-            series18.IsXValueIndexed = true;
-            series18.Legend = "Legend1";
-            series18.Name = "Kvadraticka funkce";
-            this.chart1.Series.Add(series18);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.IsVisibleInLegend = false;
+            series1.IsXValueIndexed = true;
+            series1.Legend = "Legend1";
+            series1.Name = "Kvadraticka funkce";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(694, 512);
             this.chart1.TabIndex = 8;
             this.chart1.Text = "chart1";
+            // 
+            // Kvalabel3
+            // 
+            this.Kvalabel3.AutoSize = true;
+            this.Kvalabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Kvalabel3.Location = new System.Drawing.Point(27, 252);
+            this.Kvalabel3.Name = "Kvalabel3";
+            this.Kvalabel3.Size = new System.Drawing.Size(18, 20);
+            this.Kvalabel3.TabIndex = 11;
+            this.Kvalabel3.Text = "1";
+            // 
+            // Kvalabel2
+            // 
+            this.Kvalabel2.AutoSize = true;
+            this.Kvalabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Kvalabel2.Location = new System.Drawing.Point(27, 230);
+            this.Kvalabel2.Name = "Kvalabel2";
+            this.Kvalabel2.Size = new System.Drawing.Size(18, 20);
+            this.Kvalabel2.TabIndex = 10;
+            this.Kvalabel2.Text = "1";
             // 
             // Kvalabel1
             // 
             this.Kvalabel1.AutoSize = true;
             this.Kvalabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Kvalabel1.Location = new System.Drawing.Point(24, 306);
+            this.Kvalabel1.Location = new System.Drawing.Point(27, 206);
             this.Kvalabel1.Name = "Kvalabel1";
             this.Kvalabel1.Size = new System.Drawing.Size(18, 20);
             this.Kvalabel1.TabIndex = 9;
@@ -271,21 +293,21 @@
             // 
             this.KvaTextBox3.Location = new System.Drawing.Point(50, 116);
             this.KvaTextBox3.Name = "KvaTextBox3";
-            this.KvaTextBox3.Size = new System.Drawing.Size(116, 20);
+            this.KvaTextBox3.Size = new System.Drawing.Size(120, 20);
             this.KvaTextBox3.TabIndex = 2;
             // 
             // KvaTextBox2
             // 
             this.KvaTextBox2.Location = new System.Drawing.Point(50, 90);
             this.KvaTextBox2.Name = "KvaTextBox2";
-            this.KvaTextBox2.Size = new System.Drawing.Size(116, 20);
+            this.KvaTextBox2.Size = new System.Drawing.Size(120, 20);
             this.KvaTextBox2.TabIndex = 1;
             // 
             // KvaTextBox1
             // 
             this.KvaTextBox1.Location = new System.Drawing.Point(50, 64);
             this.KvaTextBox1.Name = "KvaTextBox1";
-            this.KvaTextBox1.Size = new System.Drawing.Size(116, 20);
+            this.KvaTextBox1.Size = new System.Drawing.Size(120, 20);
             this.KvaTextBox1.TabIndex = 0;
             // 
             // tabPage2
@@ -316,7 +338,7 @@
             // 
             this.Explabel3.AutoSize = true;
             this.Explabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Explabel3.Location = new System.Drawing.Point(24, 136);
+            this.Explabel3.Location = new System.Drawing.Point(27, 206);
             this.Explabel3.Name = "Explabel3";
             this.Explabel3.Size = new System.Drawing.Size(18, 20);
             this.Explabel3.TabIndex = 10;
@@ -352,12 +374,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(229, 38);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(18, 111);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(17, 20);
+            this.label3.Size = new System.Drawing.Size(27, 24);
             this.label3.TabIndex = 25;
-            this.label3.Text = "c";
+            this.label3.Text = "c:";
             // 
             // ExptextBox4
             // 
@@ -370,90 +392,92 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(127, 38);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(17, 85);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(18, 20);
+            this.label2.Size = new System.Drawing.Size(28, 24);
             this.label2.TabIndex = 24;
-            this.label2.Text = "b";
+            this.label2.Text = "b:";
             // 
             // ExptextBox3
             // 
-            this.ExptextBox3.Location = new System.Drawing.Point(233, 61);
+            this.ExptextBox3.Location = new System.Drawing.Point(50, 116);
             this.ExptextBox3.Name = "ExptextBox3";
-            this.ExptextBox3.Size = new System.Drawing.Size(100, 20);
+            this.ExptextBox3.Size = new System.Drawing.Size(120, 20);
             this.ExptextBox3.TabIndex = 23;
             // 
             // ExptextBox2
             // 
-            this.ExptextBox2.Location = new System.Drawing.Point(127, 61);
+            this.ExptextBox2.Location = new System.Drawing.Point(50, 90);
             this.ExptextBox2.Name = "ExptextBox2";
-            this.ExptextBox2.Size = new System.Drawing.Size(100, 20);
+            this.ExptextBox2.Size = new System.Drawing.Size(120, 20);
             this.ExptextBox2.TabIndex = 22;
             // 
             // Expbutton1
             // 
-            this.Expbutton1.Location = new System.Drawing.Point(21, 87);
+            this.Expbutton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Expbutton1.Location = new System.Drawing.Point(50, 142);
             this.Expbutton1.Name = "Expbutton1";
-            this.Expbutton1.Size = new System.Drawing.Size(75, 23);
+            this.Expbutton1.Size = new System.Drawing.Size(120, 28);
             this.Expbutton1.TabIndex = 21;
-            this.Expbutton1.Text = "button1";
+            this.Expbutton1.Text = "Vykresli graf";
             this.Expbutton1.UseVisualStyleBackColor = true;
             this.Expbutton1.Click += new System.EventHandler(this.Expbutton1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(24, 38);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(17, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 20);
+            this.label1.Size = new System.Drawing.Size(27, 24);
             this.label1.TabIndex = 19;
-            this.label1.Text = "a";
+            this.label1.Text = "a:";
             // 
             // ExptextBox1
             // 
-            this.ExptextBox1.Location = new System.Drawing.Point(21, 61);
+            this.ExptextBox1.Location = new System.Drawing.Point(50, 64);
             this.ExptextBox1.Name = "ExptextBox1";
-            this.ExptextBox1.Size = new System.Drawing.Size(100, 20);
+            this.ExptextBox1.Size = new System.Drawing.Size(120, 20);
             this.ExptextBox1.TabIndex = 9;
             // 
             // Explabel1
             // 
             this.Explabel1.AutoSize = true;
-            this.Explabel1.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Explabel1.Location = new System.Drawing.Point(24, 15);
+            this.Explabel1.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Explabel1.Location = new System.Drawing.Point(6, 32);
             this.Explabel1.Name = "Explabel1";
-            this.Explabel1.Size = new System.Drawing.Size(257, 23);
+            this.Explabel1.Size = new System.Drawing.Size(287, 27);
             this.Explabel1.TabIndex = 8;
             this.Explabel1.Text = "Rovnice ve tvaru: a^(x-b)+c";
             // 
             // chart2
             // 
-            chartArea19.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
-            chartArea19.CursorX.AutoScroll = false;
-            chartArea19.CursorY.AutoScroll = false;
-            chartArea19.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea19);
-            legend19.Name = "Legend1";
-            this.chart2.Legends.Add(legend19);
+            chartArea2.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
+            chartArea2.CursorX.AutoScroll = false;
+            chartArea2.CursorY.AutoScroll = false;
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(339, 34);
             this.chart2.Name = "chart2";
-            series19.ChartArea = "ChartArea1";
-            series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series19.IsVisibleInLegend = false;
-            series19.IsXValueIndexed = true;
-            series19.Legend = "Legend1";
-            series19.LegendText = "Exponencialni";
-            series19.LegendToolTip = "Exponencialni";
-            series19.Name = "Exponencialni funkce";
-            this.chart2.Series.Add(series19);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.IsVisibleInLegend = false;
+            series2.IsXValueIndexed = true;
+            series2.Legend = "Legend1";
+            series2.LegendText = "Exponencialni";
+            series2.LegendToolTip = "Exponencialni";
+            series2.Name = "Exponencialni funkce";
+            this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(694, 512);
             this.chart2.TabIndex = 26;
             this.chart2.Text = "chart2";
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.label11);
             this.tabPage3.Controls.Add(this.Gonchart1);
             this.tabPage3.Controls.Add(this.Gonlabel1);
             this.tabPage3.Controls.Add(this.Gonbutton1);
@@ -473,20 +497,20 @@
             // 
             // Gonchart1
             // 
-            chartArea20.Name = "ChartArea1";
-            this.Gonchart1.ChartAreas.Add(chartArea20);
-            legend20.Name = "Legend1";
-            this.Gonchart1.Legends.Add(legend20);
+            chartArea3.Name = "ChartArea1";
+            this.Gonchart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.Gonchart1.Legends.Add(legend3);
             this.Gonchart1.Location = new System.Drawing.Point(339, 34);
             this.Gonchart1.Name = "Gonchart1";
-            series20.BorderWidth = 4;
-            series20.ChartArea = "ChartArea1";
-            series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            series20.IsVisibleInLegend = false;
-            series20.Legend = "Legend1";
-            series20.Name = "Goniometricka funkce";
-            this.Gonchart1.Series.Add(series20);
+            series3.BorderWidth = 4;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            series3.IsVisibleInLegend = false;
+            series3.Legend = "Legend1";
+            series3.Name = "Goniometricka funkce";
+            this.Gonchart1.Series.Add(series3);
             this.Gonchart1.Size = new System.Drawing.Size(694, 512);
             this.Gonchart1.TabIndex = 33;
             this.Gonchart1.Text = "chart4";
@@ -495,7 +519,7 @@
             // 
             this.Gonlabel1.AutoSize = true;
             this.Gonlabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Gonlabel1.Location = new System.Drawing.Point(23, 123);
+            this.Gonlabel1.Location = new System.Drawing.Point(27, 206);
             this.Gonlabel1.Name = "Gonlabel1";
             this.Gonlabel1.Size = new System.Drawing.Size(18, 20);
             this.Gonlabel1.TabIndex = 11;
@@ -503,67 +527,69 @@
             // 
             // Gonbutton1
             // 
-            this.Gonbutton1.Location = new System.Drawing.Point(21, 87);
+            this.Gonbutton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Gonbutton1.Location = new System.Drawing.Point(50, 142);
             this.Gonbutton1.Name = "Gonbutton1";
-            this.Gonbutton1.Size = new System.Drawing.Size(75, 23);
+            this.Gonbutton1.Size = new System.Drawing.Size(120, 42);
             this.Gonbutton1.TabIndex = 22;
-            this.Gonbutton1.Text = "button1";
+            this.Gonbutton1.Text = "Vykresli trojúhelník";
             this.Gonbutton1.UseVisualStyleBackColor = true;
             this.Gonbutton1.Click += new System.EventHandler(this.Gonbutton1_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(228, 40);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(18, 111);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(17, 20);
+            this.label4.Size = new System.Drawing.Size(27, 24);
             this.label4.TabIndex = 31;
-            this.label4.Text = "c";
+            this.label4.Text = "c:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(126, 40);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.Location = new System.Drawing.Point(17, 85);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(18, 20);
+            this.label6.Size = new System.Drawing.Size(28, 24);
             this.label6.TabIndex = 30;
-            this.label6.Text = "b";
+            this.label6.Text = "b:";
             // 
             // GontextBox2
             // 
-            this.GontextBox2.Location = new System.Drawing.Point(126, 63);
+            this.GontextBox2.Location = new System.Drawing.Point(50, 90);
             this.GontextBox2.Name = "GontextBox2";
-            this.GontextBox2.Size = new System.Drawing.Size(100, 20);
+            this.GontextBox2.Size = new System.Drawing.Size(120, 20);
             this.GontextBox2.TabIndex = 28;
             // 
             // GontextBox1
             // 
-            this.GontextBox1.Location = new System.Drawing.Point(21, 63);
+            this.GontextBox1.Location = new System.Drawing.Point(50, 64);
             this.GontextBox1.Name = "GontextBox1";
-            this.GontextBox1.Size = new System.Drawing.Size(100, 20);
+            this.GontextBox1.Size = new System.Drawing.Size(120, 20);
             this.GontextBox1.TabIndex = 29;
             // 
             // GontextBox3
             // 
-            this.GontextBox3.Location = new System.Drawing.Point(231, 63);
+            this.GontextBox3.Location = new System.Drawing.Point(50, 116);
             this.GontextBox3.Name = "GontextBox3";
-            this.GontextBox3.Size = new System.Drawing.Size(100, 20);
+            this.GontextBox3.Size = new System.Drawing.Size(120, 20);
             this.GontextBox3.TabIndex = 26;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(23, 40);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label8.Location = new System.Drawing.Point(17, 60);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(18, 20);
+            this.label8.Size = new System.Drawing.Size(27, 24);
             this.label8.TabIndex = 27;
-            this.label8.Text = "a";
+            this.label8.Text = "a:";
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.LogLabel3);
             this.tabPage4.Controls.Add(this.label9);
             this.tabPage4.Controls.Add(this.logtextBox3);
             this.tabPage4.Controls.Add(this.logtextBox2);
@@ -609,24 +635,24 @@
             // 
             // Logchart1
             // 
-            chartArea17.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
-            chartArea17.CursorX.AutoScroll = false;
-            chartArea17.CursorY.AutoScroll = false;
-            chartArea17.Name = "ChartArea1";
-            this.Logchart1.ChartAreas.Add(chartArea17);
-            legend17.Name = "Legend1";
-            this.Logchart1.Legends.Add(legend17);
+            chartArea4.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
+            chartArea4.CursorX.AutoScroll = false;
+            chartArea4.CursorY.AutoScroll = false;
+            chartArea4.Name = "ChartArea1";
+            this.Logchart1.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.Logchart1.Legends.Add(legend4);
             this.Logchart1.Location = new System.Drawing.Point(339, 34);
             this.Logchart1.Name = "Logchart1";
-            series17.ChartArea = "ChartArea1";
-            series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series17.IsVisibleInLegend = false;
-            series17.IsXValueIndexed = true;
-            series17.Legend = "Legend1";
-            series17.LegendText = "Exponencialni";
-            series17.LegendToolTip = "Exponencialni";
-            series17.Name = "Logaritmicka funkce";
-            this.Logchart1.Series.Add(series17);
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series4.IsVisibleInLegend = false;
+            series4.IsXValueIndexed = true;
+            series4.Legend = "Legend1";
+            series4.LegendText = "Exponencialni";
+            series4.LegendToolTip = "Exponencialni";
+            series4.Name = "Logaritmicka funkce";
+            this.Logchart1.Series.Add(series4);
             this.Logchart1.Size = new System.Drawing.Size(694, 512);
             this.Logchart1.TabIndex = 27;
             this.Logchart1.Text = "chart3";
@@ -695,25 +721,23 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "kva.png");
             // 
-            // Kvalabel2
+            // label11
             // 
-            this.Kvalabel2.AutoSize = true;
-            this.Kvalabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Kvalabel2.Location = new System.Drawing.Point(24, 330);
-            this.Kvalabel2.Name = "Kvalabel2";
-            this.Kvalabel2.Size = new System.Drawing.Size(18, 20);
-            this.Kvalabel2.TabIndex = 10;
-            this.Kvalabel2.Text = "1";
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label11.Location = new System.Drawing.Point(6, 32);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(188, 27);
+            this.label11.TabIndex = 34;
+            this.label11.Text = "Zadat délky stran:";
             // 
-            // Kvalabel3
+            // LogLabel3
             // 
-            this.Kvalabel3.AutoSize = true;
-            this.Kvalabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Kvalabel3.Location = new System.Drawing.Point(24, 352);
-            this.Kvalabel3.Name = "Kvalabel3";
-            this.Kvalabel3.Size = new System.Drawing.Size(18, 20);
-            this.Kvalabel3.TabIndex = 11;
-            this.Kvalabel3.Text = "1";
+            this.LogLabel3.AutoSize = true;
+            this.LogLabel3.Location = new System.Drawing.Point(27, 206);
+            this.LogLabel3.Name = "LogLabel3";
+            this.LogLabel3.Size = new System.Drawing.Size(0, 13);
+            this.LogLabel3.TabIndex = 30;
             // 
             // Form1
             // 
@@ -799,6 +823,8 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart Logchart1;
         private System.Windows.Forms.Label Kvalabel3;
         private System.Windows.Forms.Label Kvalabel2;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label LogLabel3;
     }
 }
 
