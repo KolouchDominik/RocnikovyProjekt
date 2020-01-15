@@ -34,7 +34,6 @@ C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\obj\Debug\Rocni
 C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\obj\Debug\Rocnikovy_projekt.Form1.resources
 C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\obj\Debug\Rocnikovy_projekt.Properties.Resources.resources
 C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\obj\Debug\Rocnikovy_projekt.csproj.GenerateResource.cache
-C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\obj\Debug\Rocnikovy_projekt.csproj.CoreCompileInputs.cache
 C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\obj\Debug\Rocnikovy_projekt.csproj.CopyComplete
 C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\obj\Debug\Rocnikovy_projekt.exe
 C:\Users\Dominik\source\repos\RocnikovyProjekt\Rocnikovy_projekt\obj\Debug\Rocnikovy_projekt.pdb

@@ -10,7 +10,6 @@ namespace Rocnikovy_projekt
     class LogaritmickaFunkce
     {
         private double a;
-        private double n;
         private double rozA;
         private double rozB;
         private Chart graf;
@@ -61,8 +60,8 @@ namespace Rocnikovy_projekt
 
         public string Vlastnosti()
         {
-            string pom = "";
-            string rostKles = "";
+            string pom;
+            string rostKles;
             string oborH = "Oborem hodnot logaritmické funkce jsou všechna reálná čísla";
             string defO = "Definiční obor: (0;∞)";  
             if (a > 1) rostKles = "Funkce je rostoucí";

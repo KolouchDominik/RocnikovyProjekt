@@ -55,13 +55,13 @@ namespace Rocnikovy_projekt
                 
                 graf.Series["Goniometricka funkce"].Points.Clear();
                 graf.Series["Goniometricka funkce"].Points.AddXY(0, 0);
-                graf.Series["Goniometricka funkce"].Points.AddXY(c, 0);
+                graf.Series["Goniometricka funkce"].Points.AddXY(a, 0);
                 graf.Series["Goniometricka funkce"].Points.AddXY(SouVysky,vyska);
                 graf.Series["Goniometricka funkce"].Points.AddXY(0, 0);
 
                 
 
-                    
+                     
                 graf.ChartAreas["ChartArea1"].AxisY.Maximum =c+1;
                 graf.ChartAreas["ChartArea1"].AxisY.Minimum = -1;
                 graf.ChartAreas["ChartArea1"].AxisY.Interval = 1;
@@ -79,7 +79,7 @@ namespace Rocnikovy_projekt
             double p = (a + b + c) / 2; //poloviční obvod
             vyska = (2 / a) * Math.Sqrt(p * (p - a) * (p - b) * (p - c));
 
-            double SouXVysky = Math.Sqrt((b * b) - (vyska * vyska));
+            double SouXVysky = (a * a) / b;
             return SouXVysky;
         }
     }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -76,6 +75,7 @@
             this.Explabel1 = new System.Windows.Forms.Label();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label11 = new System.Windows.Forms.Label();
             this.Gonchart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.Gonlabel1 = new System.Windows.Forms.Label();
             this.Gonbutton1 = new System.Windows.Forms.Button();
@@ -86,6 +86,7 @@
             this.GontextBox3 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.LogLabel3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.logtextBox3 = new System.Windows.Forms.TextBox();
             this.logtextBox2 = new System.Windows.Forms.TextBox();
@@ -96,9 +97,6 @@
             this.logbutton1 = new System.Windows.Forms.Button();
             this.logtextBox1 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.label11 = new System.Windows.Forms.Label();
-            this.LogLabel3 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -495,6 +493,16 @@
             this.tabPage3.Text = "Goniometrická funkce";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label11.Location = new System.Drawing.Point(6, 32);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(188, 27);
+            this.label11.TabIndex = 34;
+            this.label11.Text = "Zadat délky stran:";
+            // 
             // Gonchart1
             // 
             chartArea3.Name = "ChartArea1";
@@ -608,6 +616,14 @@
             this.tabPage4.Text = "Logaritmická funkce";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // LogLabel3
+            // 
+            this.LogLabel3.AutoSize = true;
+            this.LogLabel3.Location = new System.Drawing.Point(27, 206);
+            this.LogLabel3.Name = "LogLabel3";
+            this.LogLabel3.Size = new System.Drawing.Size(0, 13);
+            this.LogLabel3.TabIndex = 30;
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -715,30 +731,6 @@
             this.label12.TabIndex = 26;
             this.label12.Text = "a:";
             // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "kva.png");
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold);
-            this.label11.Location = new System.Drawing.Point(6, 32);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(188, 27);
-            this.label11.TabIndex = 34;
-            this.label11.Text = "Zadat délky stran:";
-            // 
-            // LogLabel3
-            // 
-            this.LogLabel3.AutoSize = true;
-            this.LogLabel3.Location = new System.Drawing.Point(27, 206);
-            this.LogLabel3.Name = "LogLabel3";
-            this.LogLabel3.Size = new System.Drawing.Size(0, 13);
-            this.LogLabel3.TabIndex = 30;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -810,7 +802,6 @@
         private System.Windows.Forms.Button Gonbutton1;
         private System.Windows.Forms.Label Gonlabel1;
         private System.Windows.Forms.DataVisualization.Charting.Chart Gonchart1;
-        private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button logbutton1;
         private System.Windows.Forms.Label LogLabel1;
         private System.Windows.Forms.TextBox logtextBox1;

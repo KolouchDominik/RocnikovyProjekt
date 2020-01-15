@@ -62,7 +62,7 @@ namespace Rocnikovy_projekt
                 KvaButtonClick = true;
             }
 
-            else MessageBox.Show("špantě zadané parametry, musí být obsaženy pouze čísla!");
+            else MessageBox.Show("Špantě zadané hodnoty, musí být obsaženy pouze čísla!");
             
         }
 
@@ -78,6 +78,7 @@ namespace Rocnikovy_projekt
                 KvaFun.NastavRozA(RozA);
                 KvaFun.Vykresli();
             }
+            else MessageBox.Show("Zadaná hodnota pro začátek intervalu musí být číslo!");
         }
 
         private void KvaTextBox5_TextChanged(object sender, EventArgs e)
@@ -89,6 +90,7 @@ namespace Rocnikovy_projekt
                 KvaFun.NastavRozB(RozB);
                 KvaFun.Vykresli();
             }
+            else MessageBox.Show("Zadaná hodnota pro konec intervalu musí být číslo!");
         }
 
 
@@ -98,7 +100,7 @@ namespace Rocnikovy_projekt
 
         private void Expbutton1_Click(object sender, EventArgs e)
         {
-            
+
             if (double.TryParse(ExptextBox1.Text, out double ExpA)
                 && double.TryParse(ExptextBox2.Text, out double ExpB)
                 && double.TryParse(ExptextBox3.Text, out double ExpC)
@@ -114,6 +116,7 @@ namespace Rocnikovy_projekt
                 }
                 else MessageBox.Show("Základ \"a\" musí být větší než 0 "); //viditelné úvozovky
             }
+            else MessageBox.Show("Špantě zadané hodnoty, musí být obsaženy pouze čísla!");
         }
 
 
@@ -124,6 +127,7 @@ namespace Rocnikovy_projekt
                 ExpFun.NastavRozA(RozA);
                 ExpFun.Vykresli();
             }
+            else MessageBox.Show("Zadaná hodnota pro začátek intervalu musí být číslo!");
         }
 
        
@@ -135,6 +139,7 @@ namespace Rocnikovy_projekt
                 ExpFun.NastavRozB(RozB);
                 ExpFun.Vykresli();  
             }
+            else MessageBox.Show("Zadaná hodnota pro konec intervalu musí být číslo!");
         }
 
         
@@ -149,14 +154,15 @@ namespace Rocnikovy_projekt
 
         private void Gonbutton1_Click(object sender, EventArgs e)
         {
-            if (double.TryParse(GontextBox1.Text, out double stranaA) 
-            && double.TryParse(GontextBox2.Text, out double stranaB) 
+            if (double.TryParse(GontextBox1.Text, out double stranaA)
+            && double.TryParse(GontextBox2.Text, out double stranaB)
             && double.TryParse(GontextBox3.Text, out double stranaC))
             {
-                GoniometrickeFunkce gonFun = new GoniometrickeFunkce(stranaA, stranaB, stranaC,Gonchart1);
+                GoniometrickeFunkce gonFun = new GoniometrickeFunkce(stranaA, stranaB, stranaC, Gonchart1);
                 Gonlabel1.Text = gonFun.vypocet();
 
             }
+            else MessageBox.Show("Špantě zadané hodnoty, musí být obsaženy pouze čísla!");
         }
 
        
@@ -174,16 +180,17 @@ namespace Rocnikovy_projekt
                 LogButtonClick = true;
                 LogLabel3.Text = LogFun.Vlastnosti();
             }
-            else MessageBox.Show("Špatně zadané parametry!");
+            else MessageBox.Show("Špantě zadané hodnoty, musí být obsaženy pouze čísla!");
         }
       
         private void LogtextBox2_TextChanged(object sender, EventArgs e)
         {
-            if(double.TryParse(logtextBox2.Text,out double rozA)&&LogButtonClick)
+            if (double.TryParse(logtextBox2.Text, out double rozA) && LogButtonClick)
             {
                 LogFun.NastavRozA(rozA);
                 LogFun.Vykresly();
             }
+            else MessageBox.Show("Zadaná hodnota pro začátek intervalu musí být číslo!");
         }
         private void LogtextBox3_TextChanged(object sender, EventArgs e)
         {
@@ -192,6 +199,7 @@ namespace Rocnikovy_projekt
                 LogFun.NastavRozB(rozB);
                 LogFun.Vykresly();
             }
+            else MessageBox.Show("Zadaná hodnota pro konec intervalu musí být číslo!");
         }
 
         #endregion
