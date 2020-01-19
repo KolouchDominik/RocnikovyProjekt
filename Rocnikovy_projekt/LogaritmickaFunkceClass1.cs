@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms.DataVisualization.Charting;
+using System.Windows.Forms;
 
 namespace Rocnikovy_projekt
 {
@@ -46,6 +47,7 @@ namespace Rocnikovy_projekt
                     graf.Series["Logaritmicka funkce"].Points.AddXY(x, y);
                 }
             }
+            else MessageBox.Show("Špatně zadaná hodnota, a>0, a!=1");
         }
 
         public void NastavRozA(double rozA)

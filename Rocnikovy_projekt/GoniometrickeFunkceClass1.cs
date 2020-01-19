@@ -42,7 +42,7 @@ namespace Rocnikovy_projekt
 
             
         
-        public string vypocet()
+        public string vykresli()
         {
             if (kontrola())
             {
@@ -52,26 +52,30 @@ namespace Rocnikovy_projekt
                 gamma = 180 - alpha - beta;
                 double SouVysky = SouVysky_delka(out vyska);
 
-                
+
                 graf.Series["Goniometricka funkce"].Points.Clear();
                 graf.Series["Goniometricka funkce"].Points.AddXY(0, 0);
                 graf.Series["Goniometricka funkce"].Points.AddXY(a, 0);
-                graf.Series["Goniometricka funkce"].Points.AddXY(SouVysky,vyska);
+                graf.Series["Goniometricka funkce"].Points.AddXY(SouVysky, vyska);
                 graf.Series["Goniometricka funkce"].Points.AddXY(0, 0);
 
-                
 
-                     
-                graf.ChartAreas["ChartArea1"].AxisY.Maximum =c+1;
+
+
+                graf.ChartAreas["ChartArea1"].AxisY.Maximum = c + 1;
                 graf.ChartAreas["ChartArea1"].AxisY.Minimum = -1;
                 graf.ChartAreas["ChartArea1"].AxisY.Interval = 1;
-                graf.ChartAreas["ChartArea1"].AxisX.Maximum = c+1;
+                graf.ChartAreas["ChartArea1"].AxisX.Maximum = c + 1;
                 graf.ChartAreas["ChartArea1"].AxisX.Minimum = -1;
                 graf.ChartAreas["ChartArea1"].AxisX.Interval = 1;
 
                 return "Alpha: " + alpha + "°\nBeta: " + beta + "°\nGamma: " + gamma + "°";
             }
-            else return "součet dvou kratších stran \n  musí být větší než strana nejdelší";
+            else
+            {
+                MessageBox.Show("součet dvou kratších stran \nmusí být větší než strana nejdelší");
+                return "";
+            }
         }
 
         private double SouVysky_delka(out double vyska)
