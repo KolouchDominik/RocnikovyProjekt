@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using System.Drawing.Drawing2D;
 
 namespace Rocnikovy_projekt
 {
@@ -19,6 +20,7 @@ namespace Rocnikovy_projekt
         public Form1()
         {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             
         }
 
@@ -41,33 +43,15 @@ namespace Rocnikovy_projekt
                 && double.TryParse(KvaTextBox4.Text, out double KvaRozA)
                 && double.TryParse(KvaTextBox5.Text, out double KvaRozB))
             {
+                KvaButtonClick = true;
                 KvaFun = new KvadratickaFunkce(KvaA, KvaB, KvaC, chart1, KvaRozA, KvaRozB);
 
                 KvaFun.Vykresli();
-                x1 = KvaFun.Koreny(out x2, out bool ReseniVR);
-                if (ReseniVR)
-                {
-                    if (x1 != x2)
-                    {
-                        Kvalabel1.Text = "Kořen x1 = " + x1;
-                        Kvalabel2.Text = "Kořen x2 = " + x2;
-                    }
-                    else Kvalabel1.Text = "Kořen x1 a x2 = " + x1;
-                }
-                else Kvalabel3.Text = "Nemá řešení v oboru reálných čísel\n" +
-                "Vrchol v bodě: " + KvaFun.VrcholXY() +
-                "\nDefiniční obor: " + KvaFun.Definicni_obor() +"\n"+
-               KvaFun.MaxMin();
-
-                KvaButtonClick = true;
+                Kvalabel1.Text = KvaFun.Vlastnosti();
             }
-
-            else MessageBox.Show("Špantě zadané hodnoty, musí být obsaženy pouze čísla!");
+            else MessageBox.Show("Špantě zadané hodnoty, musí být obsaženy pouze čísla!\nVšechny textové pole musí obsahovat hodnotu!");
             
         }
-
-      
-
         private void KvaTextBox4_TextChanged(object sender, EventArgs e)
         {
             
@@ -79,7 +63,6 @@ namespace Rocnikovy_projekt
                 KvaFun.Vykresli();
             }
         }
-
         private void KvaTextBox5_TextChanged(object sender, EventArgs e)
         {
             bool spravne = double.TryParse(KvaTextBox5.Text, out double RozB);
@@ -98,7 +81,7 @@ namespace Rocnikovy_projekt
 
         private void Expbutton1_Click(object sender, EventArgs e)
         {
-
+            
             if (double.TryParse(ExptextBox1.Text, out double ExpA)
                 && double.TryParse(ExptextBox2.Text, out double ExpB)
                 && double.TryParse(ExptextBox3.Text, out double ExpC)
@@ -114,7 +97,7 @@ namespace Rocnikovy_projekt
                 }
                 else MessageBox.Show("Základ \"a\" musí být větší než 0 "); //viditelné úvozovky
             }
-            else MessageBox.Show("Špantě zadané hodnoty, musí být obsaženy pouze čísla!");
+            else MessageBox.Show("Špantě zadané hodnoty, musí být obsaženy pouze čísla!\nVšechny textové pole musí obsahovat hodnotu!");
         }
 
 
@@ -158,7 +141,7 @@ namespace Rocnikovy_projekt
                 Gonlabel1.Text = gonFun.Vykresli();
 
             }
-            else MessageBox.Show("Špantě zadané hodnoty, musí být obsaženy pouze čísla!");
+            else MessageBox.Show("Špantě zadané hodnoty, musí být obsaženy pouze čísla!\nVšechny textové pole musí obsahovat hodnotu!");
         }
 
        
@@ -176,25 +159,31 @@ namespace Rocnikovy_projekt
                 LogButtonClick = true;
                 LogLabel3.Text = LogFun.Vlastnosti();
             }
-            else MessageBox.Show("Špantě zadané hodnoty, musí být obsaženy pouze čísla!");
+            else MessageBox.Show("Špantě zadané hodnoty, musí být obsaženy pouze čísla!\nVšechny textové pole musí obsahovat hodnotu!");
         }
       
         private void LogtextBox2_TextChanged(object sender, EventArgs e)
         {
             if (double.TryParse(logtextBox2.Text, out double rozA) && LogButtonClick)
             {
-                //konzultace -> program spadne, když číslo začne 0 (0.1,0.2...) logaritmická funkce nemá nikdy na ose X číslo 0
-                LogFun.NastavRozA(rozA);
-                LogFun.Vykresly();
+                if (rozA > 0)
+                {
+                    //konzultace -> program spadne, když číslo začne 0 (0.1,0.2...) logaritmická funkce nemá nikdy na ose X číslo 0
+                    LogFun.NastavRozA(rozA);
+                    LogFun.Vykresly();
+                }
             }
         }
         private void LogtextBox3_TextChanged(object sender, EventArgs e)
         {
             if (double.TryParse(logtextBox3.Text, out double rozB) && LogButtonClick)
             {
-                //stejný problém, například pro interval (0.1,0.8)
-                LogFun.NastavRozB(rozB);
-                LogFun.Vykresly();
+                if (rozB > 0)
+                {
+                    //stejný problém, například pro interval (0.1,0.8)
+                    LogFun.NastavRozB(rozB);
+                    LogFun.Vykresly();
+                }
             }
         }
 

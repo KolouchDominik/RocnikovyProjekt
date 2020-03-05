@@ -39,6 +39,7 @@ namespace Rocnikovy_projekt
 
         public void Vykresly()
         {
+            graf.Series["Logaritmicka funkce"].Points.Clear();
             if (Kontrola())
             {
                 for (double x = rozA; x < rozB; x=x+0.1)

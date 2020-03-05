@@ -53,8 +53,6 @@
             this.KvaTextBox5 = new System.Windows.Forms.TextBox();
             this.KvaTextBox4 = new System.Windows.Forms.TextBox();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.Kvalabel3 = new System.Windows.Forms.Label();
-            this.Kvalabel2 = new System.Windows.Forms.Label();
             this.Kvalabel1 = new System.Windows.Forms.Label();
             this.KvaTextBox3 = new System.Windows.Forms.TextBox();
             this.KvaTextBox2 = new System.Windows.Forms.TextBox();
@@ -78,7 +76,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.Gonchart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.Gonlabel1 = new System.Windows.Forms.Label();
-            this.Gonbutton1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.GontextBox2 = new System.Windows.Forms.TextBox();
@@ -97,6 +94,7 @@
             this.logbutton1 = new System.Windows.Forms.Button();
             this.logtextBox1 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.Gonbutton1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -132,8 +130,6 @@
             this.tabPage1.Controls.Add(this.KvaTextBox5);
             this.tabPage1.Controls.Add(this.KvaTextBox4);
             this.tabPage1.Controls.Add(this.chart1);
-            this.tabPage1.Controls.Add(this.Kvalabel3);
-            this.tabPage1.Controls.Add(this.Kvalabel2);
             this.tabPage1.Controls.Add(this.Kvalabel1);
             this.tabPage1.Controls.Add(this.KvaTextBox3);
             this.tabPage1.Controls.Add(this.KvaTextBox2);
@@ -256,26 +252,6 @@
             this.chart1.Size = new System.Drawing.Size(694, 512);
             this.chart1.TabIndex = 8;
             this.chart1.Text = "chart1";
-            // 
-            // Kvalabel3
-            // 
-            this.Kvalabel3.AutoSize = true;
-            this.Kvalabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Kvalabel3.Location = new System.Drawing.Point(27, 252);
-            this.Kvalabel3.Name = "Kvalabel3";
-            this.Kvalabel3.Size = new System.Drawing.Size(18, 20);
-            this.Kvalabel3.TabIndex = 11;
-            this.Kvalabel3.Text = "1";
-            // 
-            // Kvalabel2
-            // 
-            this.Kvalabel2.AutoSize = true;
-            this.Kvalabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Kvalabel2.Location = new System.Drawing.Point(27, 230);
-            this.Kvalabel2.Name = "Kvalabel2";
-            this.Kvalabel2.Size = new System.Drawing.Size(18, 20);
-            this.Kvalabel2.TabIndex = 10;
-            this.Kvalabel2.Text = "1";
             // 
             // Kvalabel1
             // 
@@ -527,28 +503,17 @@
             // 
             this.Gonlabel1.AutoSize = true;
             this.Gonlabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Gonlabel1.Location = new System.Drawing.Point(27, 206);
+            this.Gonlabel1.Location = new System.Drawing.Point(26, 450);
             this.Gonlabel1.Name = "Gonlabel1";
             this.Gonlabel1.Size = new System.Drawing.Size(18, 20);
             this.Gonlabel1.TabIndex = 11;
             this.Gonlabel1.Text = "1";
             // 
-            // Gonbutton1
-            // 
-            this.Gonbutton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Gonbutton1.Location = new System.Drawing.Point(50, 142);
-            this.Gonbutton1.Name = "Gonbutton1";
-            this.Gonbutton1.Size = new System.Drawing.Size(120, 42);
-            this.Gonbutton1.TabIndex = 22;
-            this.Gonbutton1.Text = "Vykresli trojúhelník";
-            this.Gonbutton1.UseVisualStyleBackColor = true;
-            this.Gonbutton1.Click += new System.EventHandler(this.Gonbutton1_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(18, 111);
+            this.label4.Location = new System.Drawing.Point(18, 335);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(27, 24);
             this.label4.TabIndex = 31;
@@ -558,7 +523,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(17, 85);
+            this.label6.Location = new System.Drawing.Point(17, 309);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(28, 24);
             this.label6.TabIndex = 30;
@@ -566,21 +531,21 @@
             // 
             // GontextBox2
             // 
-            this.GontextBox2.Location = new System.Drawing.Point(50, 90);
+            this.GontextBox2.Location = new System.Drawing.Point(50, 314);
             this.GontextBox2.Name = "GontextBox2";
             this.GontextBox2.Size = new System.Drawing.Size(120, 20);
             this.GontextBox2.TabIndex = 28;
             // 
             // GontextBox1
             // 
-            this.GontextBox1.Location = new System.Drawing.Point(50, 64);
+            this.GontextBox1.Location = new System.Drawing.Point(50, 288);
             this.GontextBox1.Name = "GontextBox1";
             this.GontextBox1.Size = new System.Drawing.Size(120, 20);
             this.GontextBox1.TabIndex = 29;
             // 
             // GontextBox3
             // 
-            this.GontextBox3.Location = new System.Drawing.Point(50, 116);
+            this.GontextBox3.Location = new System.Drawing.Point(50, 340);
             this.GontextBox3.Name = "GontextBox3";
             this.GontextBox3.Size = new System.Drawing.Size(120, 20);
             this.GontextBox3.TabIndex = 26;
@@ -589,7 +554,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(17, 60);
+            this.label8.Location = new System.Drawing.Point(17, 284);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(27, 24);
             this.label8.TabIndex = 27;
@@ -731,6 +696,17 @@
             this.label12.TabIndex = 26;
             this.label12.Text = "a:";
             // 
+            // Gonbutton1
+            // 
+            this.Gonbutton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Gonbutton1.Location = new System.Drawing.Point(50, 366);
+            this.Gonbutton1.Name = "Gonbutton1";
+            this.Gonbutton1.Size = new System.Drawing.Size(120, 42);
+            this.Gonbutton1.TabIndex = 22;
+            this.Gonbutton1.Text = "Vykresli trojúhelník";
+            this.Gonbutton1.UseVisualStyleBackColor = true;
+            this.Gonbutton1.Click += new System.EventHandler(this.Gonbutton1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -739,6 +715,7 @@
             this.ClientSize = new System.Drawing.Size(1072, 603);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.tabControl1.ResumeLayout(false);
@@ -799,7 +776,6 @@
         private System.Windows.Forms.TextBox GontextBox1;
         private System.Windows.Forms.TextBox GontextBox3;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button Gonbutton1;
         private System.Windows.Forms.Label Gonlabel1;
         private System.Windows.Forms.DataVisualization.Charting.Chart Gonchart1;
         private System.Windows.Forms.Button logbutton1;
@@ -812,10 +788,9 @@
         private System.Windows.Forms.TextBox logtextBox3;
         private System.Windows.Forms.TextBox logtextBox2;
         private System.Windows.Forms.DataVisualization.Charting.Chart Logchart1;
-        private System.Windows.Forms.Label Kvalabel3;
-        private System.Windows.Forms.Label Kvalabel2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label LogLabel3;
+        private System.Windows.Forms.Button Gonbutton1;
     }
 }
 

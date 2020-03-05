@@ -47,56 +47,60 @@ namespace Rocnikovy_projekt
         {
             this.rozB = rozB;
         }
+
         public void Vykresli()
         {
             graf.Series["Kvadraticka funkce"].Points.Clear();
-            for (double x = rozA; x <= rozB; x=x+0.5)
+            for (double x = rozA; x <= rozB; x=x+0.1)
             {
                 double y = a * (x * x) + b * x + c;
                 graf.Series["Kvadraticka funkce"].Points.AddXY(x, y);
             }
         }
         //************************************************************************
-        public double Koreny(out double x2, out bool ResVR)
+        private string Koreny()
         {
+            x1 = 0;
             x2 = 0;
+            string pom;
+
             D = b * b - 4 * a * c;
             if (D == 0)
             {
                 x1 = -b / (2 * a);
-                x2 = x1;
-                ResVR = true;
+                return pom = "Rovnice má 1 reálný kořen: " + x1;
             }
             else if (D > 0)
             {
                 x1 = (-b + Math.Sqrt(D)) / (2 * a);
                 x2 = (-b - Math.Sqrt(D)) / (2 * a);
-                ResVR = true;
+                return pom = "Rovnice má 2 reálné kořeny: " + x1 + " " + x2;
             }
-            else ResVR = false;
-            
-            return x1;
+            else return pom = "Rovnice nemá reálný kořen";
         }
+
+        public string Vlastnosti()
+        {
+            string pom;
+            pom = Koreny() + "\nVrchol v bodě: " + VrcholXY() + "\nDefiniční obor: " + Definicni_obor()+"\n"+MaxMin();
+            return pom;
+        }
+
+
+
         //**************************************************************************
-        public string VrcholXY()
+        private string VrcholXY()
         {
             double VrcholX = 0;
             double VrcholY = 0;
-            if (a > 0)
-            {
-                VrcholX = -b /(2*a);
-                VrcholY = -((b * b) / (4 * a)) + c;
-                return "[" + VrcholX + ";" + VrcholY + "]";
-            }
-            else
-            {
-                VrcholX = -b / (2 * a);
-                VrcholY = -((b * b) / (4 * a)) + c;
-                return "[" + VrcholX + ";" + VrcholY + "]";
-            }
+            string pom;
+            VrcholX = -b / (2 * a);
+            VrcholY = -((b * b) / (4 * a)) + c;
+            return pom=  "[" + VrcholX + ";" + VrcholY + "]";
+            
         }
         //*****************************************************************************
-        public string Definicni_obor()
+        private string Definicni_obor()
         {
             if(a>0)
             {
@@ -108,7 +112,7 @@ namespace Rocnikovy_projekt
             } 
         }
         //****************************************************************************
-        public string MaxMin()
+        private string MaxMin()
         {
             if (a > 0)
             {
