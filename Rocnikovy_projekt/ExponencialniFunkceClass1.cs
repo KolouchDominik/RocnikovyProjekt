@@ -46,7 +46,7 @@ namespace Rocnikovy_projekt
 
             graf.Series["Exponencialni funkce"].Points.Clear();
 
-            for (double x = rozA; x < rozB; x = x + 0.1) 
+            for (   double x = rozA; x < rozB; x = x + 0.1) 
             {
                 y = Math.Pow(a, x - b) + c;
                 graf.Series["Exponencialni funkce"].Points.AddXY(x, y);

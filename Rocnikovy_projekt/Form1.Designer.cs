@@ -34,12 +34,12 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -73,13 +73,14 @@
             this.Explabel1 = new System.Windows.Forms.Label();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.CosradioButton1 = new System.Windows.Forms.RadioButton();
+            this.SinradioButton1 = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
-            this.Gonchart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.Gonlabel1 = new System.Windows.Forms.Label();
+            this.Gonbutton1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.GontextBox2 = new System.Windows.Forms.TextBox();
-            this.GontextBox1 = new System.Windows.Forms.TextBox();
             this.GontextBox3 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -94,16 +95,22 @@
             this.logbutton1 = new System.Windows.Forms.Button();
             this.logtextBox1 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.Gonbutton1 = new System.Windows.Forms.Button();
+            this.GontextBox1 = new System.Windows.Forms.TextBox();
+            this.GontextBox4 = new System.Windows.Forms.TextBox();
+            this.GontextBox5 = new System.Windows.Forms.TextBox();
+            this.GonChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.GonLabelSinCos = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Gonchart1)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logchart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GonChart)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -451,8 +458,14 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.GonLabelSinCos);
+            this.tabPage3.Controls.Add(this.label13);
+            this.tabPage3.Controls.Add(this.label14);
+            this.tabPage3.Controls.Add(this.GontextBox5);
+            this.tabPage3.Controls.Add(this.GontextBox4);
+            this.tabPage3.Controls.Add(this.CosradioButton1);
+            this.tabPage3.Controls.Add(this.SinradioButton1);
             this.tabPage3.Controls.Add(this.label11);
-            this.tabPage3.Controls.Add(this.Gonchart1);
             this.tabPage3.Controls.Add(this.Gonlabel1);
             this.tabPage3.Controls.Add(this.Gonbutton1);
             this.tabPage3.Controls.Add(this.label4);
@@ -461,6 +474,7 @@
             this.tabPage3.Controls.Add(this.GontextBox1);
             this.tabPage3.Controls.Add(this.GontextBox3);
             this.tabPage3.Controls.Add(this.label8);
+            this.tabPage3.Controls.Add(this.GonChart);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -469,51 +483,68 @@
             this.tabPage3.Text = "Goniometrická funkce";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // CosradioButton1
+            // 
+            this.CosradioButton1.AutoSize = true;
+            this.CosradioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.CosradioButton1.Location = new System.Drawing.Point(102, 63);
+            this.CosradioButton1.Name = "CosradioButton1";
+            this.CosradioButton1.Size = new System.Drawing.Size(84, 24);
+            this.CosradioButton1.TabIndex = 36;
+            this.CosradioButton1.TabStop = true;
+            this.CosradioButton1.Text = "Cosinus";
+            this.CosradioButton1.UseVisualStyleBackColor = true;
+            this.CosradioButton1.CheckedChanged += new System.EventHandler(this.CosradioButton1_CheckedChanged);
+            // 
+            // SinradioButton1
+            // 
+            this.SinradioButton1.AutoSize = true;
+            this.SinradioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.SinradioButton1.Location = new System.Drawing.Point(11, 63);
+            this.SinradioButton1.Name = "SinradioButton1";
+            this.SinradioButton1.Size = new System.Drawing.Size(67, 24);
+            this.SinradioButton1.TabIndex = 35;
+            this.SinradioButton1.TabStop = true;
+            this.SinradioButton1.Text = "Sinus";
+            this.SinradioButton1.UseVisualStyleBackColor = true;
+            this.SinradioButton1.CheckedChanged += new System.EventHandler(this.SinradioButton1_CheckedChanged);
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.label11.Location = new System.Drawing.Point(6, 32);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(188, 27);
+            this.label11.Size = new System.Drawing.Size(150, 25);
             this.label11.TabIndex = 34;
-            this.label11.Text = "Zadat délky stran:";
-            // 
-            // Gonchart1
-            // 
-            chartArea3.Name = "ChartArea1";
-            this.Gonchart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.Gonchart1.Legends.Add(legend3);
-            this.Gonchart1.Location = new System.Drawing.Point(339, 34);
-            this.Gonchart1.Name = "Gonchart1";
-            series3.BorderWidth = 4;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            series3.IsVisibleInLegend = false;
-            series3.Legend = "Legend1";
-            series3.Name = "Goniometricka funkce";
-            this.Gonchart1.Series.Add(series3);
-            this.Gonchart1.Size = new System.Drawing.Size(694, 512);
-            this.Gonchart1.TabIndex = 33;
-            this.Gonchart1.Text = "chart4";
+            this.label11.Text = "Výběr funkce";
             // 
             // Gonlabel1
             // 
             this.Gonlabel1.AutoSize = true;
             this.Gonlabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Gonlabel1.Location = new System.Drawing.Point(26, 450);
+            this.Gonlabel1.Location = new System.Drawing.Point(16, 272);
             this.Gonlabel1.Name = "Gonlabel1";
             this.Gonlabel1.Size = new System.Drawing.Size(18, 20);
             this.Gonlabel1.TabIndex = 11;
             this.Gonlabel1.Text = "1";
             // 
+            // Gonbutton1
+            // 
+            this.Gonbutton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Gonbutton1.Location = new System.Drawing.Point(39, 213);
+            this.Gonbutton1.Name = "Gonbutton1";
+            this.Gonbutton1.Size = new System.Drawing.Size(120, 42);
+            this.Gonbutton1.TabIndex = 22;
+            this.Gonbutton1.Text = "Vykresli trojúhelník";
+            this.Gonbutton1.UseVisualStyleBackColor = true;
+            this.Gonbutton1.Click += new System.EventHandler(this.Gonbutton1_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(18, 335);
+            this.label4.Location = new System.Drawing.Point(7, 182);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(27, 24);
             this.label4.TabIndex = 31;
@@ -523,7 +554,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(17, 309);
+            this.label6.Location = new System.Drawing.Point(6, 156);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(28, 24);
             this.label6.TabIndex = 30;
@@ -531,21 +562,14 @@
             // 
             // GontextBox2
             // 
-            this.GontextBox2.Location = new System.Drawing.Point(50, 314);
+            this.GontextBox2.Location = new System.Drawing.Point(39, 161);
             this.GontextBox2.Name = "GontextBox2";
             this.GontextBox2.Size = new System.Drawing.Size(120, 20);
             this.GontextBox2.TabIndex = 28;
             // 
-            // GontextBox1
-            // 
-            this.GontextBox1.Location = new System.Drawing.Point(50, 288);
-            this.GontextBox1.Name = "GontextBox1";
-            this.GontextBox1.Size = new System.Drawing.Size(120, 20);
-            this.GontextBox1.TabIndex = 29;
-            // 
             // GontextBox3
             // 
-            this.GontextBox3.Location = new System.Drawing.Point(50, 340);
+            this.GontextBox3.Location = new System.Drawing.Point(39, 187);
             this.GontextBox3.Name = "GontextBox3";
             this.GontextBox3.Size = new System.Drawing.Size(120, 20);
             this.GontextBox3.TabIndex = 26;
@@ -554,7 +578,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(17, 284);
+            this.label8.Location = new System.Drawing.Point(6, 131);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(27, 24);
             this.label8.TabIndex = 27;
@@ -696,16 +720,79 @@
             this.label12.TabIndex = 26;
             this.label12.Text = "a:";
             // 
-            // Gonbutton1
+            // GontextBox1
             // 
-            this.Gonbutton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Gonbutton1.Location = new System.Drawing.Point(50, 366);
-            this.Gonbutton1.Name = "Gonbutton1";
-            this.Gonbutton1.Size = new System.Drawing.Size(120, 42);
-            this.Gonbutton1.TabIndex = 22;
-            this.Gonbutton1.Text = "Vykresli trojúhelník";
-            this.Gonbutton1.UseVisualStyleBackColor = true;
-            this.Gonbutton1.Click += new System.EventHandler(this.Gonbutton1_Click);
+            this.GontextBox1.Location = new System.Drawing.Point(39, 135);
+            this.GontextBox1.Name = "GontextBox1";
+            this.GontextBox1.Size = new System.Drawing.Size(120, 20);
+            this.GontextBox1.TabIndex = 29;
+            // 
+            // GontextBox4
+            // 
+            this.GontextBox4.Location = new System.Drawing.Point(402, 34);
+            this.GontextBox4.Name = "GontextBox4";
+            this.GontextBox4.Size = new System.Drawing.Size(27, 20);
+            this.GontextBox4.TabIndex = 37;
+            // 
+            // GontextBox5
+            // 
+            this.GontextBox5.Location = new System.Drawing.Point(442, 34);
+            this.GontextBox5.Name = "GontextBox5";
+            this.GontextBox5.Size = new System.Drawing.Size(27, 20);
+            this.GontextBox5.TabIndex = 38;
+            // 
+            // GonChart
+            // 
+            chartArea3.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
+            chartArea3.CursorX.AutoScroll = false;
+            chartArea3.CursorY.AutoScroll = false;
+            chartArea3.Name = "ChartArea1";
+            this.GonChart.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.GonChart.Legends.Add(legend3);
+            this.GonChart.Location = new System.Drawing.Point(339, 34);
+            this.GonChart.Name = "GonChart";
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series3.IsVisibleInLegend = false;
+            series3.IsXValueIndexed = true;
+            series3.Legend = "Legend1";
+            series3.LegendText = "Exponencialni";
+            series3.LegendToolTip = "Exponencialni";
+            series3.Name = "Goniometricka funkce";
+            this.GonChart.Series.Add(series3);
+            this.GonChart.Size = new System.Drawing.Size(694, 512);
+            this.GonChart.TabIndex = 39;
+            this.GonChart.Text = "chart3";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(431, 38);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(10, 13);
+            this.label14.TabIndex = 41;
+            this.label14.Text = ";";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label13.Location = new System.Drawing.Point(402, 15);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(84, 13);
+            this.label13.TabIndex = 42;
+            this.label13.Text = "Rozsah osy X";
+            // 
+            // GonLabelSinCos
+            // 
+            this.GonLabelSinCos.AutoSize = true;
+            this.GonLabelSinCos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GonLabelSinCos.Location = new System.Drawing.Point(6, 90);
+            this.GonLabelSinCos.Name = "GonLabelSinCos";
+            this.GonLabelSinCos.Size = new System.Drawing.Size(203, 25);
+            this.GonLabelSinCos.TabIndex = 43;
+            this.GonLabelSinCos.Text = "Rovnice ve tvaru: ";
             // 
             // Form1
             // 
@@ -727,10 +814,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Gonchart1)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logchart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GonChart)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -773,11 +860,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox GontextBox2;
-        private System.Windows.Forms.TextBox GontextBox1;
         private System.Windows.Forms.TextBox GontextBox3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label Gonlabel1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart Gonchart1;
         private System.Windows.Forms.Button logbutton1;
         private System.Windows.Forms.Label LogLabel1;
         private System.Windows.Forms.TextBox logtextBox1;
@@ -791,6 +876,15 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label LogLabel3;
         private System.Windows.Forms.Button Gonbutton1;
+        private System.Windows.Forms.RadioButton CosradioButton1;
+        private System.Windows.Forms.RadioButton SinradioButton1;
+        private System.Windows.Forms.TextBox GontextBox4;
+        private System.Windows.Forms.TextBox GontextBox1;
+        private System.Windows.Forms.TextBox GontextBox5;
+        private System.Windows.Forms.DataVisualization.Charting.Chart GonChart;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label GonLabelSinCos;
     }
 }
 

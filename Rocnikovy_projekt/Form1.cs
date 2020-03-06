@@ -22,11 +22,13 @@ namespace Rocnikovy_projekt
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.FixedSingle;
             
+            
         }
 
         KvadratickaFunkce KvaFun;
         ExponencialniFunkce ExpFun;
         LogaritmickaFunkce LogFun;
+        GoniometrickeFunkce GonFun;
 
         bool KvaButtonClick = false;
         bool ExpButtonClick = false;
@@ -55,9 +57,9 @@ namespace Rocnikovy_projekt
         private void KvaTextBox4_TextChanged(object sender, EventArgs e)
         {
             
-            bool spravne = double.TryParse(KvaTextBox4.Text, out double RozA);
+            
 
-            if (spravne&&KvaButtonClick)
+            if (double.TryParse(KvaTextBox4.Text, out double RozA) && KvaButtonClick)
             {
                 KvaFun.NastavRozA(RozA);
                 KvaFun.Vykresli();
@@ -65,9 +67,9 @@ namespace Rocnikovy_projekt
         }
         private void KvaTextBox5_TextChanged(object sender, EventArgs e)
         {
-            bool spravne = double.TryParse(KvaTextBox5.Text, out double RozB);
+            
 
-            if(spravne&&KvaButtonClick)
+            if(double.TryParse(KvaTextBox5.Text, out double RozB) && KvaButtonClick)
             {
                 KvaFun.NastavRozB(RozB);
                 KvaFun.Vykresli();
@@ -133,18 +135,49 @@ namespace Rocnikovy_projekt
 
         private void Gonbutton1_Click(object sender, EventArgs e)
         {
-            if (double.TryParse(GontextBox1.Text, out double stranaA)
-            && double.TryParse(GontextBox2.Text, out double stranaB)
-            && double.TryParse(GontextBox3.Text, out double stranaC))
+            if(SinradioButton1.Checked)
             {
-                GoniometrickeFunkce gonFun = new GoniometrickeFunkce(stranaA, stranaB, stranaC, Gonchart1);
-                Gonlabel1.Text = gonFun.Vykresli();
-
+                if(double.TryParse(GontextBox1.Text,out double a)
+                    && double.TryParse(GontextBox2.Text, out double b)
+                    && double.TryParse(GontextBox3.Text, out double c)
+                    &&double.TryParse(GontextBox4.Text, out double rozA)
+                    && double.TryParse(GontextBox5.Text, out double rozB))
+                {
+                    GonFun = new GoniometrickeFunkce(a, b, c, rozA, rozB, "sin",GonChart);
+                    GonFun.Vykresly();
+                    Gonlabel1.Text = GonFun.Vlastnosit();
+                }
+                else { MessageBox.Show("Chybně zadané vstupy!"); }
             }
-            else MessageBox.Show("Špantě zadané hodnoty, musí být obsaženy pouze čísla!\nVšechny textové pole musí obsahovat hodnotu!");
+            else if(CosradioButton1.Checked)
+            {
+                if (double.TryParse(GontextBox1.Text, out double a)
+                    && double.TryParse(GontextBox2.Text, out double b)
+                    && double.TryParse(GontextBox3.Text, out double c)
+                    && double.TryParse(GontextBox4.Text, out double rozA)
+                    && double.TryParse(GontextBox5.Text, out double rozB))
+                {
+                    GonFun = new GoniometrickeFunkce(a, b, c, rozA, rozB, "cos", GonChart); ;
+                    GonFun.Vykresly();
+                    Gonlabel1.Text = GonFun.Vlastnosit();
+                }
+                else { MessageBox.Show("Chybně zadané vstupy!"); }
+            }
+            else
+            {
+                MessageBox.Show("Není vybrána funkce!");
+            }
+
+        }
+        private void SinradioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            GonLabelSinCos.Text = "Rovnice ve tvaru: a*sin(x*b)+c";
+        }
+        private void CosradioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            GonLabelSinCos.Text = "Rovnice ve tvaru: a*cos(x*b)+c";
         }
 
-       
         #endregion
 
         #region Logaritmicka funkce
@@ -187,7 +220,12 @@ namespace Rocnikovy_projekt
             }
         }
 
+
         #endregion
+
+
+       
+        
     }
 
 }
