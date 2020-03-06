@@ -135,21 +135,21 @@ namespace Rocnikovy_projekt
 
         private void Gonbutton1_Click(object sender, EventArgs e)
         {
-            if(SinradioButton1.Checked)
+            if (SinradioButton1.Checked)
             {
-                if(double.TryParse(GontextBox1.Text,out double a)
+                if (double.TryParse(GontextBox1.Text, out double a)
                     && double.TryParse(GontextBox2.Text, out double b)
                     && double.TryParse(GontextBox3.Text, out double c)
-                    &&double.TryParse(GontextBox4.Text, out double rozA)
+                    && double.TryParse(GontextBox4.Text, out double rozA)
                     && double.TryParse(GontextBox5.Text, out double rozB))
                 {
-                    GonFun = new GoniometrickeFunkce(a, b, c, rozA, rozB, "sin",GonChart);
+                    GonFun = new GoniometrickeFunkce(a, b, c, rozA, rozB, "sin", GonChart);
                     GonFun.Vykresly();
                     Gonlabel1.Text = GonFun.Vlastnosit();
                 }
                 else { MessageBox.Show("Chybně zadané vstupy!"); }
             }
-            else if(CosradioButton1.Checked)
+            else if (CosradioButton1.Checked)
             {
                 if (double.TryParse(GontextBox1.Text, out double a)
                     && double.TryParse(GontextBox2.Text, out double b)
@@ -158,6 +158,20 @@ namespace Rocnikovy_projekt
                     && double.TryParse(GontextBox5.Text, out double rozB))
                 {
                     GonFun = new GoniometrickeFunkce(a, b, c, rozA, rozB, "cos", GonChart); ;
+                    GonFun.Vykresly();
+                    Gonlabel1.Text = GonFun.Vlastnosit();
+                }
+                else { MessageBox.Show("Chybně zadané vstupy!"); }
+            }
+            else if (TanradioButton1.Checked)
+            {
+                if (double.TryParse(GontextBox1.Text, out double a)
+                    && double.TryParse(GontextBox2.Text, out double b)
+                    && double.TryParse(GontextBox3.Text, out double c)
+                    && double.TryParse(GontextBox4.Text, out double rozA)
+                    && double.TryParse(GontextBox5.Text, out double rozB))
+                {
+                    GonFun = new GoniometrickeFunkce(a, b, c, rozA, rozB, "tan", GonChart); ;
                     GonFun.Vykresly();
                     Gonlabel1.Text = GonFun.Vlastnosit();
                 }
@@ -176,6 +190,10 @@ namespace Rocnikovy_projekt
         private void CosradioButton1_CheckedChanged(object sender, EventArgs e)
         {
             GonLabelSinCos.Text = "Rovnice ve tvaru: a*cos(x*b)+c";
+        }
+        private void TanradioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            GonLabelSinCos.Text = "Rovnice ve tvaru: a*tg(x*b)+c";
         }
 
         #endregion
@@ -221,10 +239,11 @@ namespace Rocnikovy_projekt
         }
 
 
+
+
+
         #endregion
 
-
-       
         
     }
 
