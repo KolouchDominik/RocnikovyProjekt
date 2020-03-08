@@ -15,7 +15,7 @@ namespace Rocnikovy_projekt
         [STAThread]
         static void Main()
         {
-            Application.ThreadException += new ThreadExceptionEventHandler(ReseniChyb);
+            //Application.ThreadException += new ThreadExceptionEventHandler(ReseniChyb);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
@@ -23,7 +23,7 @@ namespace Rocnikovy_projekt
 
 
            
-        }
+        }/*
         private static void ReseniChyb(object sender, ThreadExceptionEventArgs t)
         {
             try
@@ -37,7 +37,7 @@ namespace Rocnikovy_projekt
                 MessageBox.Show("Chybička se vloudila!\nRozsah osy X má příliš mnoho bodů k vykreslení!\nZmenšete rozsah osy X");
                 Application.Restart();
             }
-        }
+        }*/
 
     }
 }

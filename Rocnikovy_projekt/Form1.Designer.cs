@@ -44,40 +44,41 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.KvaButton1 = new System.Windows.Forms.Button();
-            this.KvaLabel10 = new System.Windows.Forms.Label();
+            this.KvaTitulek = new System.Windows.Forms.Label();
             this.Kvalabel9 = new System.Windows.Forms.Label();
             this.Kvalabel8 = new System.Windows.Forms.Label();
             this.Kvalabel7 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.Kvalabel6 = new System.Windows.Forms.Label();
-            this.KvaTextBox5 = new System.Windows.Forms.TextBox();
-            this.KvaTextBox4 = new System.Windows.Forms.TextBox();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.Kvalabel1 = new System.Windows.Forms.Label();
-            this.KvaTextBox3 = new System.Windows.Forms.TextBox();
-            this.KvaTextBox2 = new System.Windows.Forms.TextBox();
-            this.KvaTextBox1 = new System.Windows.Forms.TextBox();
+            this.KvaTextBoxRozB = new System.Windows.Forms.TextBox();
+            this.KvaTextBoxRozA = new System.Windows.Forms.TextBox();
+            this.KvaChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.KvalabelVlastnosti = new System.Windows.Forms.Label();
+            this.KvaTextBoxC = new System.Windows.Forms.TextBox();
+            this.KvaTextBoxB = new System.Windows.Forms.TextBox();
+            this.KvaTextBoxA = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.Explabel3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.Explabel2 = new System.Windows.Forms.Label();
-            this.ExptextBox5 = new System.Windows.Forms.TextBox();
+            this.ExptextBoxRozB = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.ExptextBox4 = new System.Windows.Forms.TextBox();
+            this.ExptextBoxRozA = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.ExptextBox3 = new System.Windows.Forms.TextBox();
-            this.ExptextBox2 = new System.Windows.Forms.TextBox();
+            this.ExptextBoxC = new System.Windows.Forms.TextBox();
+            this.ExptextBoxB = new System.Windows.Forms.TextBox();
             this.Expbutton1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.ExptextBox1 = new System.Windows.Forms.TextBox();
+            this.ExptextBoxA = new System.Windows.Forms.TextBox();
             this.Explabel1 = new System.Windows.Forms.Label();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.ExpChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.TanradioButton1 = new System.Windows.Forms.RadioButton();
             this.GonLabelSinCos = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.GontextBox5 = new System.Windows.Forms.TextBox();
-            this.GontextBox4 = new System.Windows.Forms.TextBox();
+            this.GontextBoxRozB = new System.Windows.Forms.TextBox();
+            this.GontextBoxRozA = new System.Windows.Forms.TextBox();
             this.CosradioButton1 = new System.Windows.Forms.RadioButton();
             this.SinradioButton1 = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
@@ -93,25 +94,24 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.LogLabel3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.logtextBox3 = new System.Windows.Forms.TextBox();
-            this.logtextBox2 = new System.Windows.Forms.TextBox();
-            this.Logchart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.logtextBoxRozB = new System.Windows.Forms.TextBox();
+            this.logtextBoxRozA = new System.Windows.Forms.TextBox();
+            this.LogChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.LogLabel2 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.LogLabel1 = new System.Windows.Forms.Label();
             this.logbutton1 = new System.Windows.Forms.Button();
-            this.logtextBox1 = new System.Windows.Forms.TextBox();
+            this.logtextBoxA = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.TanradioButton1 = new System.Windows.Forms.RadioButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KvaChart)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExpChart)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GonChart)).BeginInit();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Logchart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogChart)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -129,19 +129,19 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.KvaButton1);
-            this.tabPage1.Controls.Add(this.KvaLabel10);
+            this.tabPage1.Controls.Add(this.KvaTitulek);
             this.tabPage1.Controls.Add(this.Kvalabel9);
             this.tabPage1.Controls.Add(this.Kvalabel8);
             this.tabPage1.Controls.Add(this.Kvalabel7);
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Controls.Add(this.Kvalabel6);
-            this.tabPage1.Controls.Add(this.KvaTextBox5);
-            this.tabPage1.Controls.Add(this.KvaTextBox4);
-            this.tabPage1.Controls.Add(this.chart1);
-            this.tabPage1.Controls.Add(this.Kvalabel1);
-            this.tabPage1.Controls.Add(this.KvaTextBox3);
-            this.tabPage1.Controls.Add(this.KvaTextBox2);
-            this.tabPage1.Controls.Add(this.KvaTextBox1);
+            this.tabPage1.Controls.Add(this.KvaTextBoxRozB);
+            this.tabPage1.Controls.Add(this.KvaTextBoxRozA);
+            this.tabPage1.Controls.Add(this.KvaChart);
+            this.tabPage1.Controls.Add(this.KvalabelVlastnosti);
+            this.tabPage1.Controls.Add(this.KvaTextBoxC);
+            this.tabPage1.Controls.Add(this.KvaTextBoxB);
+            this.tabPage1.Controls.Add(this.KvaTextBoxA);
             this.tabPage1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tabPage1.ForeColor = System.Drawing.Color.Black;
             this.tabPage1.ImageKey = "kva.png";
@@ -164,15 +164,15 @@
             this.KvaButton1.UseVisualStyleBackColor = true;
             this.KvaButton1.Click += new System.EventHandler(this.KvaButton1_Click);
             // 
-            // KvaLabel10
+            // KvaTitulek
             // 
-            this.KvaLabel10.AutoSize = true;
-            this.KvaLabel10.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KvaLabel10.Location = new System.Drawing.Point(6, 32);
-            this.KvaLabel10.Name = "KvaLabel10";
-            this.KvaLabel10.Size = new System.Drawing.Size(349, 27);
-            this.KvaLabel10.TabIndex = 3;
-            this.KvaLabel10.Text = "Rovnice ve tvaru: a*x^2+b*x+c=0";
+            this.KvaTitulek.AutoSize = true;
+            this.KvaTitulek.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KvaTitulek.Location = new System.Drawing.Point(6, 32);
+            this.KvaTitulek.Name = "KvaTitulek";
+            this.KvaTitulek.Size = new System.Drawing.Size(349, 27);
+            this.KvaTitulek.TabIndex = 3;
+            this.KvaTitulek.Text = "Rovnice ve tvaru: a*x^2+b*x+c=0";
             // 
             // Kvalabel9
             // 
@@ -223,91 +223,91 @@
             this.Kvalabel6.TabIndex = 16;
             this.Kvalabel6.Text = "Rozsah osy X";
             // 
-            // KvaTextBox5
+            // KvaTextBoxRozB
             // 
-            this.KvaTextBox5.Location = new System.Drawing.Point(442, 34);
-            this.KvaTextBox5.Name = "KvaTextBox5";
-            this.KvaTextBox5.Size = new System.Drawing.Size(28, 20);
-            this.KvaTextBox5.TabIndex = 15;
-            this.KvaTextBox5.TextChanged += new System.EventHandler(this.KvaTextBox5_TextChanged);
+            this.KvaTextBoxRozB.Location = new System.Drawing.Point(442, 34);
+            this.KvaTextBoxRozB.Name = "KvaTextBoxRozB";
+            this.KvaTextBoxRozB.Size = new System.Drawing.Size(28, 20);
+            this.KvaTextBoxRozB.TabIndex = 15;
+            this.KvaTextBoxRozB.TextChanged += new System.EventHandler(this.KvaTextBoxRozB_TextChanged);
             // 
-            // KvaTextBox4
+            // KvaTextBoxRozA
             // 
-            this.KvaTextBox4.Location = new System.Drawing.Point(402, 34);
-            this.KvaTextBox4.Name = "KvaTextBox4";
-            this.KvaTextBox4.Size = new System.Drawing.Size(27, 20);
-            this.KvaTextBox4.TabIndex = 14;
-            this.KvaTextBox4.TextChanged += new System.EventHandler(this.KvaTextBox4_TextChanged);
+            this.KvaTextBoxRozA.Location = new System.Drawing.Point(402, 34);
+            this.KvaTextBoxRozA.Name = "KvaTextBoxRozA";
+            this.KvaTextBoxRozA.Size = new System.Drawing.Size(27, 20);
+            this.KvaTextBoxRozA.TabIndex = 14;
+            this.KvaTextBoxRozA.TextChanged += new System.EventHandler(this.KvaTextBoxRozA_TextChanged);
             // 
-            // chart1
+            // KvaChart
             // 
             chartArea1.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
             chartArea1.CursorX.AutoScroll = false;
             chartArea1.CursorY.AutoScroll = false;
             chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            this.KvaChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(339, 34);
-            this.chart1.Name = "chart1";
+            this.KvaChart.Legends.Add(legend1);
+            this.KvaChart.Location = new System.Drawing.Point(339, 34);
+            this.KvaChart.Name = "KvaChart";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series1.IsVisibleInLegend = false;
             series1.IsXValueIndexed = true;
             series1.Legend = "Legend1";
             series1.Name = "Kvadraticka funkce";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(694, 512);
-            this.chart1.TabIndex = 8;
-            this.chart1.Text = "chart1";
+            this.KvaChart.Series.Add(series1);
+            this.KvaChart.Size = new System.Drawing.Size(694, 512);
+            this.KvaChart.TabIndex = 8;
+            this.KvaChart.Text = "chart1";
             // 
-            // Kvalabel1
+            // KvalabelVlastnosti
             // 
-            this.Kvalabel1.AutoSize = true;
-            this.Kvalabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Kvalabel1.Location = new System.Drawing.Point(27, 206);
-            this.Kvalabel1.Name = "Kvalabel1";
-            this.Kvalabel1.Size = new System.Drawing.Size(18, 20);
-            this.Kvalabel1.TabIndex = 9;
-            this.Kvalabel1.Text = "1";
+            this.KvalabelVlastnosti.AutoSize = true;
+            this.KvalabelVlastnosti.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.KvalabelVlastnosti.Location = new System.Drawing.Point(27, 206);
+            this.KvalabelVlastnosti.Name = "KvalabelVlastnosti";
+            this.KvalabelVlastnosti.Size = new System.Drawing.Size(18, 20);
+            this.KvalabelVlastnosti.TabIndex = 9;
+            this.KvalabelVlastnosti.Text = "1";
             // 
-            // KvaTextBox3
+            // KvaTextBoxC
             // 
-            this.KvaTextBox3.Location = new System.Drawing.Point(50, 116);
-            this.KvaTextBox3.Name = "KvaTextBox3";
-            this.KvaTextBox3.Size = new System.Drawing.Size(120, 20);
-            this.KvaTextBox3.TabIndex = 2;
+            this.KvaTextBoxC.Location = new System.Drawing.Point(50, 116);
+            this.KvaTextBoxC.Name = "KvaTextBoxC";
+            this.KvaTextBoxC.Size = new System.Drawing.Size(120, 20);
+            this.KvaTextBoxC.TabIndex = 2;
             // 
-            // KvaTextBox2
+            // KvaTextBoxB
             // 
-            this.KvaTextBox2.Location = new System.Drawing.Point(50, 90);
-            this.KvaTextBox2.Name = "KvaTextBox2";
-            this.KvaTextBox2.Size = new System.Drawing.Size(120, 20);
-            this.KvaTextBox2.TabIndex = 1;
+            this.KvaTextBoxB.Location = new System.Drawing.Point(50, 90);
+            this.KvaTextBoxB.Name = "KvaTextBoxB";
+            this.KvaTextBoxB.Size = new System.Drawing.Size(120, 20);
+            this.KvaTextBoxB.TabIndex = 1;
             // 
-            // KvaTextBox1
+            // KvaTextBoxA
             // 
-            this.KvaTextBox1.Location = new System.Drawing.Point(50, 64);
-            this.KvaTextBox1.Name = "KvaTextBox1";
-            this.KvaTextBox1.Size = new System.Drawing.Size(120, 20);
-            this.KvaTextBox1.TabIndex = 0;
+            this.KvaTextBoxA.Location = new System.Drawing.Point(50, 64);
+            this.KvaTextBoxA.Name = "KvaTextBoxA";
+            this.KvaTextBoxA.Size = new System.Drawing.Size(120, 20);
+            this.KvaTextBoxA.TabIndex = 0;
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.Explabel3);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.Explabel2);
-            this.tabPage2.Controls.Add(this.ExptextBox5);
+            this.tabPage2.Controls.Add(this.ExptextBoxRozB);
             this.tabPage2.Controls.Add(this.label3);
-            this.tabPage2.Controls.Add(this.ExptextBox4);
+            this.tabPage2.Controls.Add(this.ExptextBoxRozA);
             this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.ExptextBox3);
-            this.tabPage2.Controls.Add(this.ExptextBox2);
+            this.tabPage2.Controls.Add(this.ExptextBoxC);
+            this.tabPage2.Controls.Add(this.ExptextBoxB);
             this.tabPage2.Controls.Add(this.Expbutton1);
             this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Controls.Add(this.ExptextBox1);
+            this.tabPage2.Controls.Add(this.ExptextBoxA);
             this.tabPage2.Controls.Add(this.Explabel1);
-            this.tabPage2.Controls.Add(this.chart2);
+            this.tabPage2.Controls.Add(this.ExpChart);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -345,13 +345,13 @@
             this.Explabel2.TabIndex = 19;
             this.Explabel2.Text = "Rozsah osy X";
             // 
-            // ExptextBox5
+            // ExptextBoxRozB
             // 
-            this.ExptextBox5.Location = new System.Drawing.Point(442, 34);
-            this.ExptextBox5.Name = "ExptextBox5";
-            this.ExptextBox5.Size = new System.Drawing.Size(28, 20);
-            this.ExptextBox5.TabIndex = 18;
-            this.ExptextBox5.TextChanged += new System.EventHandler(this.ExptextBox5_TextChanged);
+            this.ExptextBoxRozB.Location = new System.Drawing.Point(442, 34);
+            this.ExptextBoxRozB.Name = "ExptextBoxRozB";
+            this.ExptextBoxRozB.Size = new System.Drawing.Size(28, 20);
+            this.ExptextBoxRozB.TabIndex = 18;
+            this.ExptextBoxRozB.TextChanged += new System.EventHandler(this.ExptextBoxRozB_TextChanged);
             // 
             // label3
             // 
@@ -363,13 +363,13 @@
             this.label3.TabIndex = 25;
             this.label3.Text = "c:";
             // 
-            // ExptextBox4
+            // ExptextBoxRozA
             // 
-            this.ExptextBox4.Location = new System.Drawing.Point(402, 34);
-            this.ExptextBox4.Name = "ExptextBox4";
-            this.ExptextBox4.Size = new System.Drawing.Size(27, 20);
-            this.ExptextBox4.TabIndex = 17;
-            this.ExptextBox4.TextChanged += new System.EventHandler(this.ExptextBox4_TextChanged);
+            this.ExptextBoxRozA.Location = new System.Drawing.Point(402, 34);
+            this.ExptextBoxRozA.Name = "ExptextBoxRozA";
+            this.ExptextBoxRozA.Size = new System.Drawing.Size(27, 20);
+            this.ExptextBoxRozA.TabIndex = 17;
+            this.ExptextBoxRozA.TextChanged += new System.EventHandler(this.ExptextBoxRozA_TextChanged);
             // 
             // label2
             // 
@@ -381,19 +381,19 @@
             this.label2.TabIndex = 24;
             this.label2.Text = "b:";
             // 
-            // ExptextBox3
+            // ExptextBoxC
             // 
-            this.ExptextBox3.Location = new System.Drawing.Point(50, 116);
-            this.ExptextBox3.Name = "ExptextBox3";
-            this.ExptextBox3.Size = new System.Drawing.Size(120, 20);
-            this.ExptextBox3.TabIndex = 23;
+            this.ExptextBoxC.Location = new System.Drawing.Point(50, 116);
+            this.ExptextBoxC.Name = "ExptextBoxC";
+            this.ExptextBoxC.Size = new System.Drawing.Size(120, 20);
+            this.ExptextBoxC.TabIndex = 23;
             // 
-            // ExptextBox2
+            // ExptextBoxB
             // 
-            this.ExptextBox2.Location = new System.Drawing.Point(50, 90);
-            this.ExptextBox2.Name = "ExptextBox2";
-            this.ExptextBox2.Size = new System.Drawing.Size(120, 20);
-            this.ExptextBox2.TabIndex = 22;
+            this.ExptextBoxB.Location = new System.Drawing.Point(50, 90);
+            this.ExptextBoxB.Name = "ExptextBoxB";
+            this.ExptextBoxB.Size = new System.Drawing.Size(120, 20);
+            this.ExptextBoxB.TabIndex = 22;
             // 
             // Expbutton1
             // 
@@ -416,12 +416,12 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "a:";
             // 
-            // ExptextBox1
+            // ExptextBoxA
             // 
-            this.ExptextBox1.Location = new System.Drawing.Point(50, 64);
-            this.ExptextBox1.Name = "ExptextBox1";
-            this.ExptextBox1.Size = new System.Drawing.Size(120, 20);
-            this.ExptextBox1.TabIndex = 9;
+            this.ExptextBoxA.Location = new System.Drawing.Point(50, 64);
+            this.ExptextBoxA.Name = "ExptextBoxA";
+            this.ExptextBoxA.Size = new System.Drawing.Size(120, 20);
+            this.ExptextBoxA.TabIndex = 9;
             // 
             // Explabel1
             // 
@@ -433,17 +433,17 @@
             this.Explabel1.TabIndex = 8;
             this.Explabel1.Text = "Rovnice ve tvaru: a^(x-b)+c";
             // 
-            // chart2
+            // ExpChart
             // 
             chartArea2.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
             chartArea2.CursorX.AutoScroll = false;
             chartArea2.CursorY.AutoScroll = false;
             chartArea2.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea2);
+            this.ExpChart.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
-            this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(339, 34);
-            this.chart2.Name = "chart2";
+            this.ExpChart.Legends.Add(legend2);
+            this.ExpChart.Location = new System.Drawing.Point(339, 34);
+            this.ExpChart.Name = "ExpChart";
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series2.IsVisibleInLegend = false;
@@ -452,10 +452,10 @@
             series2.LegendText = "Exponencialni";
             series2.LegendToolTip = "Exponencialni";
             series2.Name = "Exponencialni funkce";
-            this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(694, 512);
-            this.chart2.TabIndex = 26;
-            this.chart2.Text = "chart2";
+            this.ExpChart.Series.Add(series2);
+            this.ExpChart.Size = new System.Drawing.Size(694, 512);
+            this.ExpChart.TabIndex = 26;
+            this.ExpChart.Text = "chart2";
             // 
             // tabPage3
             // 
@@ -463,8 +463,8 @@
             this.tabPage3.Controls.Add(this.GonLabelSinCos);
             this.tabPage3.Controls.Add(this.label13);
             this.tabPage3.Controls.Add(this.label14);
-            this.tabPage3.Controls.Add(this.GontextBox5);
-            this.tabPage3.Controls.Add(this.GontextBox4);
+            this.tabPage3.Controls.Add(this.GontextBoxRozB);
+            this.tabPage3.Controls.Add(this.GontextBoxRozA);
             this.tabPage3.Controls.Add(this.CosradioButton1);
             this.tabPage3.Controls.Add(this.SinradioButton1);
             this.tabPage3.Controls.Add(this.label11);
@@ -484,6 +484,19 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Goniometrická funkce";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // TanradioButton1
+            // 
+            this.TanradioButton1.AutoSize = true;
+            this.TanradioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.TanradioButton1.Location = new System.Drawing.Point(174, 63);
+            this.TanradioButton1.Name = "TanradioButton1";
+            this.TanradioButton1.Size = new System.Drawing.Size(89, 24);
+            this.TanradioButton1.TabIndex = 44;
+            this.TanradioButton1.TabStop = true;
+            this.TanradioButton1.Text = "Tangens";
+            this.TanradioButton1.UseVisualStyleBackColor = true;
+            this.TanradioButton1.CheckedChanged += new System.EventHandler(this.TanradioButton1_CheckedChanged);
             // 
             // GonLabelSinCos
             // 
@@ -514,19 +527,21 @@
             this.label14.TabIndex = 41;
             this.label14.Text = ";";
             // 
-            // GontextBox5
+            // GontextBoxRozB
             // 
-            this.GontextBox5.Location = new System.Drawing.Point(442, 34);
-            this.GontextBox5.Name = "GontextBox5";
-            this.GontextBox5.Size = new System.Drawing.Size(27, 20);
-            this.GontextBox5.TabIndex = 38;
+            this.GontextBoxRozB.Location = new System.Drawing.Point(442, 34);
+            this.GontextBoxRozB.Name = "GontextBoxRozB";
+            this.GontextBoxRozB.Size = new System.Drawing.Size(27, 20);
+            this.GontextBoxRozB.TabIndex = 38;
+            this.GontextBoxRozB.TextChanged += new System.EventHandler(this.GontextBoxRozB_TextChanged);
             // 
-            // GontextBox4
+            // GontextBoxRozA
             // 
-            this.GontextBox4.Location = new System.Drawing.Point(402, 34);
-            this.GontextBox4.Name = "GontextBox4";
-            this.GontextBox4.Size = new System.Drawing.Size(27, 20);
-            this.GontextBox4.TabIndex = 37;
+            this.GontextBoxRozA.Location = new System.Drawing.Point(402, 34);
+            this.GontextBoxRozA.Name = "GontextBoxRozA";
+            this.GontextBoxRozA.Size = new System.Drawing.Size(27, 20);
+            this.GontextBoxRozA.TabIndex = 37;
+            this.GontextBoxRozA.TextChanged += new System.EventHandler(this.GontextBoxRozA_TextChanged);
             // 
             // CosradioButton1
             // 
@@ -664,14 +679,14 @@
             // 
             this.tabPage4.Controls.Add(this.LogLabel3);
             this.tabPage4.Controls.Add(this.label9);
-            this.tabPage4.Controls.Add(this.logtextBox3);
-            this.tabPage4.Controls.Add(this.logtextBox2);
-            this.tabPage4.Controls.Add(this.Logchart1);
+            this.tabPage4.Controls.Add(this.logtextBoxRozB);
+            this.tabPage4.Controls.Add(this.logtextBoxRozA);
+            this.tabPage4.Controls.Add(this.LogChart);
             this.tabPage4.Controls.Add(this.LogLabel2);
             this.tabPage4.Controls.Add(this.label10);
             this.tabPage4.Controls.Add(this.LogLabel1);
             this.tabPage4.Controls.Add(this.logbutton1);
-            this.tabPage4.Controls.Add(this.logtextBox1);
+            this.tabPage4.Controls.Add(this.logtextBoxA);
             this.tabPage4.Controls.Add(this.label12);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
@@ -698,33 +713,33 @@
             this.label9.TabIndex = 21;
             this.label9.Text = ";";
             // 
-            // logtextBox3
+            // logtextBoxRozB
             // 
-            this.logtextBox3.Location = new System.Drawing.Point(442, 34);
-            this.logtextBox3.Name = "logtextBox3";
-            this.logtextBox3.Size = new System.Drawing.Size(28, 20);
-            this.logtextBox3.TabIndex = 19;
-            this.logtextBox3.TextChanged += new System.EventHandler(this.LogtextBox3_TextChanged);
+            this.logtextBoxRozB.Location = new System.Drawing.Point(442, 34);
+            this.logtextBoxRozB.Name = "logtextBoxRozB";
+            this.logtextBoxRozB.Size = new System.Drawing.Size(28, 20);
+            this.logtextBoxRozB.TabIndex = 19;
+            this.logtextBoxRozB.TextChanged += new System.EventHandler(this.LogtextBoxRozB_TextChanged);
             // 
-            // logtextBox2
+            // logtextBoxRozA
             // 
-            this.logtextBox2.Location = new System.Drawing.Point(402, 34);
-            this.logtextBox2.Name = "logtextBox2";
-            this.logtextBox2.Size = new System.Drawing.Size(27, 20);
-            this.logtextBox2.TabIndex = 18;
-            this.logtextBox2.TextChanged += new System.EventHandler(this.LogtextBox2_TextChanged);
+            this.logtextBoxRozA.Location = new System.Drawing.Point(402, 34);
+            this.logtextBoxRozA.Name = "logtextBoxRozA";
+            this.logtextBoxRozA.Size = new System.Drawing.Size(27, 20);
+            this.logtextBoxRozA.TabIndex = 18;
+            this.logtextBoxRozA.TextChanged += new System.EventHandler(this.LogtextBoxRozA_TextChanged);
             // 
-            // Logchart1
+            // LogChart
             // 
             chartArea4.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
             chartArea4.CursorX.AutoScroll = false;
             chartArea4.CursorY.AutoScroll = false;
             chartArea4.Name = "ChartArea1";
-            this.Logchart1.ChartAreas.Add(chartArea4);
+            this.LogChart.ChartAreas.Add(chartArea4);
             legend4.Name = "Legend1";
-            this.Logchart1.Legends.Add(legend4);
-            this.Logchart1.Location = new System.Drawing.Point(339, 34);
-            this.Logchart1.Name = "Logchart1";
+            this.LogChart.Legends.Add(legend4);
+            this.LogChart.Location = new System.Drawing.Point(339, 34);
+            this.LogChart.Name = "LogChart";
             series4.ChartArea = "ChartArea1";
             series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series4.IsVisibleInLegend = false;
@@ -733,10 +748,10 @@
             series4.LegendText = "Exponencialni";
             series4.LegendToolTip = "Exponencialni";
             series4.Name = "Logaritmicka funkce";
-            this.Logchart1.Series.Add(series4);
-            this.Logchart1.Size = new System.Drawing.Size(694, 512);
-            this.Logchart1.TabIndex = 27;
-            this.Logchart1.Text = "chart3";
+            this.LogChart.Series.Add(series4);
+            this.LogChart.Size = new System.Drawing.Size(694, 512);
+            this.LogChart.TabIndex = 27;
+            this.LogChart.Text = "chart3";
             // 
             // LogLabel2
             // 
@@ -779,12 +794,12 @@
             this.logbutton1.UseVisualStyleBackColor = true;
             this.logbutton1.Click += new System.EventHandler(this.Logbutton1_Click);
             // 
-            // logtextBox1
+            // logtextBoxA
             // 
-            this.logtextBox1.Location = new System.Drawing.Point(50, 64);
-            this.logtextBox1.Name = "logtextBox1";
-            this.logtextBox1.Size = new System.Drawing.Size(116, 20);
-            this.logtextBox1.TabIndex = 21;
+            this.logtextBoxA.Location = new System.Drawing.Point(50, 64);
+            this.logtextBoxA.Name = "logtextBoxA";
+            this.logtextBoxA.Size = new System.Drawing.Size(116, 20);
+            this.logtextBoxA.TabIndex = 21;
             // 
             // label12
             // 
@@ -795,19 +810,6 @@
             this.label12.Size = new System.Drawing.Size(27, 24);
             this.label12.TabIndex = 26;
             this.label12.Text = "a:";
-            // 
-            // TanradioButton1
-            // 
-            this.TanradioButton1.AutoSize = true;
-            this.TanradioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.TanradioButton1.Location = new System.Drawing.Point(174, 63);
-            this.TanradioButton1.Name = "TanradioButton1";
-            this.TanradioButton1.Size = new System.Drawing.Size(89, 24);
-            this.TanradioButton1.TabIndex = 44;
-            this.TanradioButton1.TabStop = true;
-            this.TanradioButton1.Text = "Tangens";
-            this.TanradioButton1.UseVisualStyleBackColor = true;
-            this.TanradioButton1.CheckedChanged += new System.EventHandler(this.TanradioButton1_CheckedChanged);
             // 
             // Form1
             // 
@@ -823,16 +825,16 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KvaChart)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExpChart)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GonChart)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Logchart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogChart)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -844,34 +846,34 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Label KvaLabel10;
-        private System.Windows.Forms.TextBox KvaTextBox3;
-        private System.Windows.Forms.TextBox KvaTextBox2;
-        private System.Windows.Forms.TextBox KvaTextBox1;
+        private System.Windows.Forms.Label KvaTitulek;
+        private System.Windows.Forms.TextBox KvaTextBoxC;
+        private System.Windows.Forms.TextBox KvaTextBoxB;
+        private System.Windows.Forms.TextBox KvaTextBoxA;
         private System.Windows.Forms.Button KvaButton1;
-        private System.Windows.Forms.Label Kvalabel1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Label KvalabelVlastnosti;
+        private System.Windows.Forms.DataVisualization.Charting.Chart KvaChart;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label Kvalabel6;
-        private System.Windows.Forms.TextBox KvaTextBox5;
-        private System.Windows.Forms.TextBox KvaTextBox4;
+        private System.Windows.Forms.TextBox KvaTextBoxRozB;
+        private System.Windows.Forms.TextBox KvaTextBoxRozA;
         private System.Windows.Forms.Label Kvalabel9;
         private System.Windows.Forms.Label Kvalabel8;
         private System.Windows.Forms.Label Kvalabel7;
         private System.Windows.Forms.Label Explabel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox ExptextBox1;
+        private System.Windows.Forms.TextBox ExptextBoxA;
         private System.Windows.Forms.Button Expbutton1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox ExptextBox3;
-        private System.Windows.Forms.TextBox ExptextBox2;
+        private System.Windows.Forms.TextBox ExptextBoxC;
+        private System.Windows.Forms.TextBox ExptextBoxB;
         private System.Windows.Forms.Label Explabel2;
-        private System.Windows.Forms.TextBox ExptextBox5;
-        private System.Windows.Forms.TextBox ExptextBox4;
+        private System.Windows.Forms.TextBox ExptextBoxRozB;
+        private System.Windows.Forms.TextBox ExptextBoxRozA;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label Explabel3;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart ExpChart;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox GontextBox2;
@@ -880,22 +882,22 @@
         private System.Windows.Forms.Label Gonlabel1;
         private System.Windows.Forms.Button logbutton1;
         private System.Windows.Forms.Label LogLabel1;
-        private System.Windows.Forms.TextBox logtextBox1;
+        private System.Windows.Forms.TextBox logtextBoxA;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label LogLabel2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox logtextBox3;
-        private System.Windows.Forms.TextBox logtextBox2;
-        private System.Windows.Forms.DataVisualization.Charting.Chart Logchart1;
+        private System.Windows.Forms.TextBox logtextBoxRozB;
+        private System.Windows.Forms.TextBox logtextBoxRozA;
+        private System.Windows.Forms.DataVisualization.Charting.Chart LogChart;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label LogLabel3;
         private System.Windows.Forms.Button Gonbutton1;
         private System.Windows.Forms.RadioButton CosradioButton1;
         private System.Windows.Forms.RadioButton SinradioButton1;
-        private System.Windows.Forms.TextBox GontextBox4;
+        private System.Windows.Forms.TextBox GontextBoxRozA;
         private System.Windows.Forms.TextBox GontextBox1;
-        private System.Windows.Forms.TextBox GontextBox5;
+        private System.Windows.Forms.TextBox GontextBoxRozB;
         private System.Windows.Forms.DataVisualization.Charting.Chart GonChart;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;

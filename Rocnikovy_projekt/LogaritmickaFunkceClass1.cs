@@ -23,11 +23,14 @@ namespace Rocnikovy_projekt
             this.graf = graf;
         }
 
+        /// <summary>
+        /// Konstruktor pro aktualizaci osy X
+        /// </summary>
         public LogaritmickaFunkce()
         {
 
         }
-
+        
         private bool Kontrola()
         {
             if (a > 0 && a != 1)
@@ -36,7 +39,9 @@ namespace Rocnikovy_projekt
             }
             else return false;
         }
-
+        /// <summary>
+        /// Dle zadaných hodnot v konstruktoru vykreslí graf
+        /// </summary>
         public void Vykresly()
         {
             graf.Series["Logaritmicka funkce"].Points.Clear();
@@ -51,16 +56,27 @@ namespace Rocnikovy_projekt
             else MessageBox.Show("Špatně zadaná hodnota, a>0, a!=1");
         }
 
+        /// <summary>
+        /// Nastaví začátek intervalu osy X
+        /// </summary>
+        /// <param name="rozA"></param>
         public void NastavRozA(double rozA)
         {
             this.rozA = rozA;
         }
-
+        /// <summary>
+        /// Nastaví konec intervalu osy X
+        /// </summary>
+        /// <param name="rozB"></param>
         public void NastavRozB(double rozB)
         {
             this.rozB = rozB;   
         }
 
+        /// <summary>
+        /// Dle zadaných hodnot v konstruktoru vypíše vlastnosti logaritmické funkce
+        /// </summary>
+        /// <returns></returns>
         public string Vlastnosti()
         {
             string pom;

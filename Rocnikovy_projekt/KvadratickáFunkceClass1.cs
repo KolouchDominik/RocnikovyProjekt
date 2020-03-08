@@ -29,7 +29,9 @@ namespace Rocnikovy_projekt
             this.rozA = rozA;
             this.rozB = rozB;
         }
-        //****************************************************************
+        /// <summary>
+        /// Konstruktor pro nastavení osy X
+        /// </summary>
         public KvadratickaFunkce()
         {
 
@@ -38,16 +40,26 @@ namespace Rocnikovy_projekt
 
         
 
-
+        /// <summary>
+        /// Nastaví začátek intervalu osy X
+        /// </summary>
+        /// <param name="rozA"></param>
         public void NastavRozA(double rozA)
         {
             this.rozA = rozA;
         }
+        /// <summary>
+        /// Nastaví konec intervalu osy X
+        /// </summary>
+        /// <param name="rozB"></param>
         public void NastavRozB(double rozB)
         {
             this.rozB = rozB;
         }
 
+        /// <summary>
+        /// Dle zadaných hodnot v konstruktoru vykreslí graf
+        /// </summary>
         public void Vykresli()
         {
             graf.Series["Kvadraticka funkce"].Points.Clear();
@@ -79,6 +91,10 @@ namespace Rocnikovy_projekt
             else return pom = "Rovnice nemá reálný kořen";
         }
 
+        /// <summary>
+        /// Dle zadaných hodnot v konstruktoru vypíše vlastnosti kvadratické funkce;
+        /// </summary>
+        /// <returns></returns>
         public string Vlastnosti()
         {
             string pom;

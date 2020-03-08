@@ -17,7 +17,16 @@ namespace Rocnikovy_projekt
         private double rozB;
         private string pom;
         private Chart graf;
-
+        /// <summary>
+        /// Konstruktor pro sinus a cosinus
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <param name="c"></param>
+        /// <param name="rozA"></param>
+        /// <param name="rozB"></param>
+        /// <param name="pom"></param>
+        /// <param name="graf"></param>
         public GoniometrickeFunkce(double a, double b, double c, double rozA, double rozB, string pom, Chart graf)
         {
             this.a = a;
@@ -28,51 +37,111 @@ namespace Rocnikovy_projekt
             this.pom = pom;
             this.graf = graf;
         }
+        /// <summary>
+        /// Konstruktor pro tangens
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <param name="rozA"></param>
+        /// <param name="rozB"></param>
+        /// <param name="pom"></param>
+        /// <param name="graf"></param>
+        public GoniometrickeFunkce(double a, double b, double rozA, double rozB, string pom, Chart graf)
+        {
+            this.a = a;
+            this.b = b;
+            this.rozA = rozA;
+            this.rozB = rozB;
+            this.pom = pom;
+            this.graf = graf;
+        }
+        /// <summary>
+        /// Konstruktor pro aktualizaci osy X
+        /// </summary>
+        public GoniometrickeFunkce()
+        {
 
+        }
+        /// <summary>
+        /// Nastaví začátek intervalu osy X
+        /// </summary>
+        /// <param name="rozA"></param>
+        public void NastavRozA(double rozA)
+        {
+            this.rozA = rozA;
+        }
+        /// <summary>
+        /// Nastaví konec intervalu osy X
+        /// </summary>
+        /// <param name="rozB"></param>
+        public void NastavRozB(double rozB)
+        {
+            this.rozB = rozB;
+        }
+
+        /// <summary>
+        /// Dle zadaných hodnot v konstruktoru vykreslí graf
+        /// </summary>
         public void Vykresly()
         {
-            graf.Series["Goniometricka funkce"].Points.Clear();
+
+
+
             if (pom == "sin")
             {
-                int j = 0;
+                graf.Series.Clear();
+                graf.Series.Add("Goniometricka funkce");
+                graf.Series["Goniometricka funkce"].ChartType = SeriesChartType.Line;
+
                 for (double x = rozA; x < rozB; x += 0.1)
                 {
-                    graf.Series["Goniometricka funkce"].Points.AddXY(x, a *(Math.Sin(x * b)) + c);
-                    
+
+                    graf.Series["Goniometricka funkce"].Points.AddXY(x, a * (Math.Sin(x * b)) + c);
+
                 }
             }
-            else if(pom == "cos")
+            else if (pom == "cos")
             {
+                graf.Series.Clear();
+                graf.Series.Add("Goniometricka funkce");
+                graf.Series["Goniometricka funkce"].ChartType = SeriesChartType.Line;
+
                 for (double x = rozA; x < rozB; x += 0.1)
                 {
                     graf.Series["Goniometricka funkce"].Points.AddXY(x, a * (Math.Cos(x * b)) + c);
                 }
             }
-            else
+            else    //Nutnost vytvořit nové serie bodů, kvůli chybám zarovnání osy x a spojování v bodech, které nejsou definované pro tangens
             {
-                string serie = "Goniometricka funkce";
+                graf.Series.Clear();
+                graf.Series.Add("Goniometricka funkce");
+                graf.ChartAreas[0].AxisY.Minimum = -10;
+                graf.ChartAreas[0].AxisY.Maximum = 10;
+                string serie = "Gon";
+                graf.Series.Add(serie);
+                graf.Series[serie].ChartType = SeriesChartType.Line;
                 int y = 2;
 
-                for (double x = 0; x <3; x = x + 0.1)
+                for (double x = rozA; x < rozB; x = x + 0.1)
                 {
-                    graf.Series[serie].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-                    graf.ChartAreas[0].AxisY.Minimum = -10;
-                    graf.ChartAreas[0].AxisY.Maximum = 10;
-                    graf.Series[serie].Points.AddXY(x, Math.Tan(x));
+
+                    graf.Series[serie].Points.AddXY(x, a * Math.Tan(x) + b);
 
                     if (Math.Tan(x + 0.1) < Math.Tan(x))
                     {
                         graf.Series.Add("Series" + y);
                         serie = "Series" + y;
+                        graf.Series[serie].ChartType = SeriesChartType.Line;
+
                         ++y;
                     }
-
-                    // draw graph for all those x with lower < x < upper
-
                 }
             }
         }
-
+        /// <summary>
+        /// Dle zadaných hodnot v konstruktoru vypíše vlastnosti vybrané goniometrické funkce
+        /// </summary>
+        /// <returns></returns>
         public string Vlastnosit()
         {
             if (pom == "sin")
@@ -91,11 +160,10 @@ namespace Rocnikovy_projekt
             }
             else
             {
-                string pomocny = "Definiční obor: všechna reálná čísla / {π/2 + kπ} kde k je celé číslo\nObor hodnot je interval: všechna reálná čísla" +
-                    "\nRostoucí v každém intervalu(-π/2+kπ; π/2+kπ) kde k je celé číslo\nNemá maximum ani minimum\nFunkce je lichá a neomezená";
+                string pomocny = "Definiční obor:\nvšechna reálná čísla / {π/2 + kπ} kde k je celé číslo\nObor hodnot: všechna reálná čísla" +
+                    "\nRostoucí v každém intervalu:\n(-π/2+kπ; π/2+kπ) kde k je celé číslo\nNemá maximum ani minimum\nFunkce je lichá a neomezená";
                 return pomocny;
             }
-
         }
     }
 }

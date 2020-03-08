@@ -17,6 +17,9 @@ namespace Rocnikovy_projekt
         private double y;
         private Chart graf;
 
+        /// <summary>
+        /// konstruktor pro aktualizaci osy X
+        /// </summary>
         public ExponencialniFunkce()
         {
 
@@ -32,15 +35,27 @@ namespace Rocnikovy_projekt
             this.graf = graf;
         }
 
+
+        /// <summary>
+        /// Nastaví začátek intervalu osy X
+        /// </summary>
+        /// <param name="rozA"></param>
         public void NastavRozA(double rozA)
         {
             this.rozA = rozA;
         }
+        /// <summary>
+        /// Nastaví konec intervalu osy X
+        /// </summary>
+        /// <param name="rozB"></param>
         public void NastavRozB(double rozB)
         {
             this.rozB = rozB;
         }
 
+        /// <summary>
+        /// Dle zadaných hodnot v konstruktoru vykreslí graf
+        /// </summary>
         public void Vykresli()
         {
 
@@ -54,7 +69,10 @@ namespace Rocnikovy_projekt
         }
 
      
-
+        /// <summary>
+        /// Dle zadaných hodnot v konstruktoru vypíše vlastnosti exponenciální funkce
+        /// </summary>
+        /// <returns></returns>
         public string Vlastnosti_ExpFun()
         {
             string pom;
