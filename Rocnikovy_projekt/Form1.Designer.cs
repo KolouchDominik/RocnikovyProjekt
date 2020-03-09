@@ -160,7 +160,7 @@
             this.KvaButton1.Name = "KvaButton1";
             this.KvaButton1.Size = new System.Drawing.Size(120, 28);
             this.KvaButton1.TabIndex = 7;
-            this.KvaButton1.Text = "Vykresli graf";
+            this.KvaButton1.Text = "Vykreslit graf";
             this.KvaButton1.UseVisualStyleBackColor = true;
             this.KvaButton1.Click += new System.EventHandler(this.KvaButton1_Click);
             // 
@@ -267,9 +267,8 @@
             this.KvalabelVlastnosti.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.KvalabelVlastnosti.Location = new System.Drawing.Point(27, 206);
             this.KvalabelVlastnosti.Name = "KvalabelVlastnosti";
-            this.KvalabelVlastnosti.Size = new System.Drawing.Size(18, 20);
+            this.KvalabelVlastnosti.Size = new System.Drawing.Size(0, 20);
             this.KvalabelVlastnosti.TabIndex = 9;
-            this.KvalabelVlastnosti.Text = "1";
             // 
             // KvaTextBoxC
             // 
@@ -322,9 +321,8 @@
             this.Explabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Explabel3.Location = new System.Drawing.Point(27, 206);
             this.Explabel3.Name = "Explabel3";
-            this.Explabel3.Size = new System.Drawing.Size(18, 20);
+            this.Explabel3.Size = new System.Drawing.Size(0, 20);
             this.Explabel3.TabIndex = 10;
-            this.Explabel3.Text = "1";
             // 
             // label5
             // 
@@ -402,7 +400,7 @@
             this.Expbutton1.Name = "Expbutton1";
             this.Expbutton1.Size = new System.Drawing.Size(120, 28);
             this.Expbutton1.TabIndex = 21;
-            this.Expbutton1.Text = "Vykresli graf";
+            this.Expbutton1.Text = "Vykreslit graf";
             this.Expbutton1.UseVisualStyleBackColor = true;
             this.Expbutton1.Click += new System.EventHandler(this.Expbutton1_Click);
             // 
@@ -585,18 +583,17 @@
             this.Gonlabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Gonlabel1.Location = new System.Drawing.Point(16, 272);
             this.Gonlabel1.Name = "Gonlabel1";
-            this.Gonlabel1.Size = new System.Drawing.Size(18, 20);
+            this.Gonlabel1.Size = new System.Drawing.Size(0, 20);
             this.Gonlabel1.TabIndex = 11;
-            this.Gonlabel1.Text = "1";
             // 
             // Gonbutton1
             // 
             this.Gonbutton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Gonbutton1.Location = new System.Drawing.Point(39, 213);
             this.Gonbutton1.Name = "Gonbutton1";
-            this.Gonbutton1.Size = new System.Drawing.Size(120, 42);
+            this.Gonbutton1.Size = new System.Drawing.Size(120, 28);
             this.Gonbutton1.TabIndex = 22;
-            this.Gonbutton1.Text = "Vykresli trojúhelník";
+            this.Gonbutton1.Text = "Vykreslit graf";
             this.Gonbutton1.UseVisualStyleBackColor = true;
             this.Gonbutton1.Click += new System.EventHandler(this.Gonbutton1_Click);
             // 
@@ -790,7 +787,7 @@
             this.logbutton1.Name = "logbutton1";
             this.logbutton1.Size = new System.Drawing.Size(116, 28);
             this.logbutton1.TabIndex = 25;
-            this.logbutton1.Text = "Vykresli Graf";
+            this.logbutton1.Text = "Vykreslit graf";
             this.logbutton1.UseVisualStyleBackColor = true;
             this.logbutton1.Click += new System.EventHandler(this.Logbutton1_Click);
             // 

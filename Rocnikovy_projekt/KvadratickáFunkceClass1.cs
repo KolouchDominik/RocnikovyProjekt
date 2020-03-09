@@ -86,7 +86,8 @@ namespace Rocnikovy_projekt
             {
                 x1 = (-b + Math.Sqrt(D)) / (2 * a);
                 x2 = (-b - Math.Sqrt(D)) / (2 * a);
-                return pom = "Rovnice má 2 reálné kořeny: "+"\nX1: " +Math.Round(x1,5) + "\nX2: " + Math.Round(x2,5); //Round - zaokrouhlení na 5 desetiných míst
+                return pom = "Rovnice má 2 reálné kořeny: "+"\nX1: "
+                        +Math.Round(x1,5) + "\nX2: " + Math.Round(x2,5);
             }
             else return pom = "Rovnice nemá reálný kořen";
         }
@@ -135,6 +136,7 @@ namespace Rocnikovy_projekt
                 return "V bodě x = " + (-(b / 2 / a) + " má funkce minimum \nFunkce nemá maximum");
             }
             else return "V bodě x = " + (-(b / 2 / a) + " má funkce maximum \nFunkce nemá minimum");
+
         }
     }
 }

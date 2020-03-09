@@ -55,7 +55,7 @@ namespace Rocnikovy_projekt
                 }
                 else
                 {
-                    MessageBox.Show("Kvadratický člen \"a\" musí být různý od 0)");
+                    MessageBox.Show("Kvadratický člen \"a\" musí být různý od 0");
                     KvaTextBoxA.Focus();
                     KvaTextBoxA.SelectAll();
                 }
@@ -101,7 +101,7 @@ namespace Rocnikovy_projekt
                     ExpButtonClick = true;
                     Explabel3.Text = ExpFun.Vlastnosti_ExpFun();
                 }
-                else MessageBox.Show("Základ \"a\" musí být větší než 0 "); //viditelné úvozovky
+                else MessageBox.Show("Základ \"a\" musí být větší než 0 ");
             }
             else MessageBox.Show("Špantě zadané hodnoty, musí být obsaženy pouze čísla!\nVšechny textové pole musí obsahovat hodnotu!");
         }

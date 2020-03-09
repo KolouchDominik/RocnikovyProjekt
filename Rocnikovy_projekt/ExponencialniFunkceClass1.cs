@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms.DataVisualization.Charting;
+using System.Windows.Forms;
 
 namespace Rocnikovy_projekt
 {
@@ -77,11 +78,20 @@ namespace Rocnikovy_projekt
         {
             string pom;
 
-            if (Rostouci()) pom = "roustoucí \nZdola omezená";
-            else pom = "klesající \nZdola omezená";
-
-            string vlastnosti = "Definiční obor: všechna reálná čísla" + "\nObor hodnot: "+ "("+ c +";∞)"+"\n"+pom + "\nNemá maximum ani minimum";
-            return vlastnosti;
+            if (a != 1)
+            {
+                if (Rostouci()) pom = "roustoucí \nZdola omezená";
+                else pom = "klesající \nZdola omezená";
+                string vlastnosti = "Definiční obor: všechna reálná čísla" + "\nObor hodnot: (" + c + ";∞)" + "\n" + pom + "\nNemá maximum ani minimum";
+                return vlastnosti;
+            }
+            else
+            {
+                pom = "Funkce je lineární";
+                string vlastnosti = "Definiční obor: všechna reálná čísla" + "\nObor hodnot: <" + (a + c) +";" + (a + c)+"> " + "\n" + pom + "\nMaximum a minimum: " + (a + c);
+                return vlastnosti; 
+            }
+            
         }
         //**********************************************************
         private bool Rostouci()
